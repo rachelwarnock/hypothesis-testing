@@ -1,5 +1,47 @@
 ---
 title: "Hypothesis testing"
 ---
-    
-Hello, Website! Welcome to the world.
+
+```{r, echo=FALSE, out.width="40%",  out.extra='style="float:right; padding:20px"'}
+knitr::include_graphics("hands.png")
+```
+
+\
+
+# Course description
+
+This course will take place **21-25 February 10:00-16:00** both in person at Henke Str. and online [via Zoom](https://fau.zoom.us/j/64375760834).
+We will finish at 16:00 at the latest each day and there will be plenty of breaks.
+
+This course focuses on **hypothesis testing** and **reproducibility** in science. 
+You will learn how develop and test your own hypotheses, perform basic statistical tests and apply this knowledge to reproduce (and potentially improve) published results. There will be a combination of lectures and group exercises. 
+
+Each student is assigned to a working [group](groups.html) and each group is assigned a published scientific paper (chosen by some of you).
+
+\
+
+# Before the course
+
+Read the paper assigned to your working group. 
+
+\
+
+# Course evaluation
+
+The goal is to reproduce the results of a published scientific article.
+On the last day of the course each group will present their findings.
+You can use this [Google Slides Template](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) to prepare your presentation.
+
+Note this course is graded together with Oceanography.
+
+\
+
+# Any questions?
+
+Email rachel.warnock@fau.de
+
+\
+\
+
+Image source: rawpixel.com
+

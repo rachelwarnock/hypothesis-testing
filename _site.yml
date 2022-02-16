@@ -1,9 +1,14 @@
 name: "Hypothesis-testing"
+# let's you build your sites navigation
+output:
+  #prettydoc::html_pretty:
+  html_document:
+    theme: simplex # other nice themes: cosmo, simplex, paper, spacelab, lumen, yeti
 navbar:
-  title: "Hypothesis testing"
   left:
-    - text: "Home"
+    - text: "Hypothesis testing"
       href: index.html
-    - text: "About"
-      href: about.html
-
+    - text: "Groups"
+      href: groups.html
+    - text: "Schedule"
+      href: schedule.html

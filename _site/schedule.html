@@ -11,7 +11,7 @@
 
 
 
-<title>Hypothesis testing</title>
+<title>Schedule</title>
 
 <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -218,6 +221,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -225,6 +291,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -262,46 +338,54 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Hypothesis testing</h1>
+<h1 class="title toc-ignore">Schedule</h1>
 
 </div>
 
 
-<p><img src="hands.png" width="40%" style="float:right; padding:20px" /></p>
-<p><br />
-</p>
-<div id="course-description" class="section level1">
-<h1>Course description</h1>
-<p>This course will take place <strong>21-25 February 10:00-16:00</strong> both in person at Henke Str. and online <a href="https://fau.zoom.us/j/64375760834">via Zoom</a>. We will finish at 16:00 at the latest each day and there will be plenty of breaks.</p>
-<p>This course focuses on <strong>hypothesis testing</strong> and <strong>reproducibility</strong> in science. You will learn how develop and test your own hypotheses, perform basic statistical tests and apply this knowledge to reproduce (and potentially improve) published results. There will be a combination of lectures and group exercises.</p>
-<p>Each student is assigned to a working <a href="groups.html">group</a> and each group is assigned a published scientific paper (chosen by some of you).</p>
-<p><br />
-</p>
+<p>Very provisional schedule. Course material will become available here throughout the course.</p>
+<div id="day-1" class="section level1">
+<h1>Day 1</h1>
+<p>Topics:</p>
+<ul>
+<li>Introduction to hypothesis testing</li>
+<li>Revisiting some basics</li>
+</ul>
 </div>
-<div id="before-the-course" class="section level1">
-<h1>Before the course</h1>
-<p>Read the paper assigned to your working group.</p>
-<p><br />
-</p>
+<div id="day-2" class="section level1">
+<h1>Day 2</h1>
+<p>Topics:</p>
+<ul>
+<li>Reproducibility and data accessibility</li>
+<li>Statistical tests I</li>
+</ul>
 </div>
-<div id="course-evaluation" class="section level1">
-<h1>Course evaluation</h1>
-<p>The goal is to reproduce the results of a published scientific article. On the last day of the course each group will present their findings. You can use this <a href="https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing">Google Slides Template</a> to prepare your presentation.</p>
-<p>Note this course is graded together with Oceanography.</p>
-<p><br />
-</p>
+<div id="day-3" class="section level1">
+<h1>Day 3</h1>
+<p>Topics:</p>
+<ul>
+<li>Statistical tests II</li>
+</ul>
 </div>
-<div id="any-questions" class="section level1">
-<h1>Any questions?</h1>
-<p>Email <a href="mailto:rachel.warnock@fau.de" class="email">rachel.warnock@fau.de</a></p>
-<p><br />
-<br />
-</p>
-<p>Image source: rawpixel.com</p>
+<div id="day-4" class="section level1">
+<h1>Day 4</h1>
+<p>Topics:</p>
+<ul>
+<li>Statistical tests III</li>
+</ul>
+</div>
+<div id="day-5" class="section level1">
+<h1>Day 5</h1>
+<ul>
+<li>Presentations</li>
+<li>End of semester party</li>
+</ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -334,6 +418,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

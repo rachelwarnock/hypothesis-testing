@@ -1,0 +1,42 @@
+---
+title: "Schedule"
+output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+---
+
+Very provisional schedule. Course material will become available here throughout the course.
+
+# Day 1
+
+Topics:
+
+* Introduction to hypothesis testing
+* Revisiting some basics
+
+# Day 2
+
+Topics:
+
+* Reproducibility and data accessibility
+* Statistical tests I
+
+# Day 3
+
+Topics:
+
+* Statistical tests II
+
+# Day 4
+
+Topics:
+
+* Statistical tests III
+
+# Day 5
+
+* Presentations
+* End of semester party
+

@@ -1,0 +1,42 @@
+---
+title: ""
+output: html_document
+---
+
+\
+
+```{r, echo=FALSE, out.width="45%",  out.extra='style="float:left; padding:20px"'}
+knitr::include_graphics("groups.png")
+```
+
+# Group 1
+
+[Statistical analysis of iron geochemical data suggests
+limited late Proterozoic oxygenation](https://www.nature.com/articles/nature14589)
+
+* Felix (online)
+* Carolin (in person)
+* Himadri (in person)
+* Pia (in person)
+  
+# Group 2
+
+[Isotopic and anatomical evidence of an herbivorous diet
+in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/24563098/)
+
+* Roy (online)
+* Isaiah (in person)
+* Janelle (online)
+* Zahra (in person)
+
+# Group 3
+
+[High coral diversity is coupled with reef-building capacity during the Late Oligocene warming](https://riviste.unimi.it/index.php/RIPS/article/view/16332)
+
+* Kerstin (in person)
+* Johannes (in person)
+* Tim (in person)
+  
+
+
+
