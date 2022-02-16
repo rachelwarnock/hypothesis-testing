@@ -5,7 +5,7 @@ output: html_document
 
 \
 
-```{r, echo=FALSE, out.width="45%",  out.extra='style="float:left; padding:20px"'}
+```{r, echo=FALSE, out.width="40%",  out.extra='style="float:right; padding:20px"'}
 knitr::include_graphics("groups.png")
 ```
 
@@ -17,8 +17,12 @@ limited late Proterozoic oxygenation](https://www.nature.com/articles/nature1458
 * Felix (online)
 * Carolin (in person)
 * Himadri (in person)
-* Pia (in person)
-  
+* Pia (in person or online)
+
+➤ **[Link to Group 1 PDF](https://drive.google.com/file/d/1duo58nAXslIEuhMJ923kM8hanXazLp3G/view?usp=sharing)**
+ 
+\ 
+
 # Group 2
 
 [Isotopic and anatomical evidence of an herbivorous diet
@@ -29,6 +33,10 @@ in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/2456
 * Janelle (online)
 * Zahra (in person)
 
+➤ **[Link to Group 2 PDF](https://drive.google.com/file/d/1ULnEQUJ3Jcqnf3JUoEo9vkguwA9i2yx2/view?usp=sharing)**
+
+\
+
 # Group 3
 
 [High coral diversity is coupled with reef-building capacity during the Late Oligocene warming](https://riviste.unimi.it/index.php/RIPS/article/view/16332)
@@ -37,6 +45,6 @@ in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/2456
 * Johannes (in person)
 * Tim (in person)
   
-
+➤ **[Link to Group 3 PDF](https://drive.google.com/file/d/1Ca1WG7dEHW7eiGX_rDj02EXx6Ro_58yg/view?usp=sharing)**
 
 

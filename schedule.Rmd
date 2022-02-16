@@ -7,7 +7,9 @@ output:
     toc_depth: 2
 ---
 
-Very provisional schedule. Course material will become available here throughout the course.
+\
+
+Very provisional schedule. Course material will be uploaded here throughout the course.
 
 # Day 1
 
