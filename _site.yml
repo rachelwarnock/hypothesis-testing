@@ -1,0 +1,9 @@
+name: "Hypothesis-testing"
+navbar:
+  title: "Hypothesis testing"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+
