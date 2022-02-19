@@ -1,5 +1,5 @@
 ---
-title: "Schedule"
+title: ""
 output:
   html_document:
     toc: TRUE
@@ -9,14 +9,27 @@ output:
 
 \
 
-Very provisional schedule. Course material will be uploaded here throughout the course.
+Course material will be uploaded here throughout the week.
 
 # Day 1
 
-Topics:
+```{r, echo = FALSE}
+library(kableExtra)
+dt <- data.frame(schedule = c("Course introduction",
+                              "Group exercise: mini reading group", #30-45 mins
+                              "Break (15 mins)", #15 mins 11:00
+                              "Introduction to hypothesis testing", #45 min lecture 12:00
+                              "Lunch (45 mins)", # 45 mins  13:00
+                              "Group exercise: defining hypothesis", #30 minutes
+                              "(Re)Introducting some statistics")) #45 minutes
+kbl(dt) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
-* Introduction to hypothesis testing
-* Revisiting some basics
+# Slides
+```
+
+
+
 
 # Day 2
 
