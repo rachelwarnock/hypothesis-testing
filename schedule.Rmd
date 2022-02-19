@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Schedule"
 output:
   html_document:
     toc: TRUE
