@@ -15,7 +15,7 @@ Course material will be uploaded here throughout the week.
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("slides/day-01.html",NA,NA,NA,NA,NA,"slides/revisiting-statistics.pdf")
+urls <- c("slides/day-01.html",NA,NA,"slides/day-01.html#26",NA,NA,"slides/revisiting-statistics.pdf")
 dt <- data.frame(schedule = c("Course introduction",
                               "Group exercise: mini reading group", #30-45 mins
                               "Break (15 mins)", #15 mins 11:00
@@ -24,6 +24,7 @@ dt <- data.frame(schedule = c("Course introduction",
                               "Group exercise: defining hypothesis", #30 minutes
                               "(Re)Introducting some statistics")) #45 minutes
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
+dt$schedule[4] <- paste0("[", dt$schedule[4], "](", urls[4], ")")
 dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
