@@ -1,9 +1,12 @@
 name: "Hypothesis-testing"
+output_dir: '.'
 # let's you build your sites navigation
 output:
   #prettydoc::html_pretty:
   html_document:
     theme: simplex # other nice themes: cosmo, simplex, paper, spacelab, lumen, yeti
+    lib_dir: site_libs
+    self_contained: no
 navbar:
   left:
     - text: "Hypothesis testing"

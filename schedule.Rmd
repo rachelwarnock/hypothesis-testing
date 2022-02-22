@@ -15,6 +15,7 @@ Course material will be uploaded here throughout the week.
 
 ```{r, echo = FALSE}
 library(kableExtra)
+urls <- c("slides/day-01.html",NA,NA,NA,NA,NA,"slides/revisiting-statistics.pdf")
 dt <- data.frame(schedule = c("Course introduction",
                               "Group exercise: mini reading group", #30-45 mins
                               "Break (15 mins)", #15 mins 11:00
@@ -22,21 +23,38 @@ dt <- data.frame(schedule = c("Course introduction",
                               "Lunch (45 mins)", # 45 mins  13:00
                               "Group exercise: defining hypothesis", #30 minutes
                               "(Re)Introducting some statistics")) #45 minutes
+dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
+dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
 # Slides
 ```
 
+Further reading:
+
+* [Learning statistics with R: Chapter 1 and Chapter 11](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
+* [tinystats.github.io/teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/)
 
 
 
 # Day 2
 
-Topics:
+```{r, echo = FALSE}
+library(kableExtra)
+urls <- c("course-intro.html",NA,NA,NA,NA,NA,"revisiting-statistics.pdf")
+dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
+                              "Group exercise: tracking down data",
+                              "Lunch (45 mins)",
+                              "Statistical tests"))
+                 
+#dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
+kbl(dt) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
-* Reproducibility and data accessibility
-* Statistical tests I
+# Slides
+```
+
 
 # Day 3
 

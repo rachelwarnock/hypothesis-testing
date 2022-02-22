@@ -1,0 +1,708 @@
+---
+title: "Hypothesis testing"
+author: 
+  - "Rachel Warnock"
+date: "21.02.2022"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+#library(xaringanExtra)
+#xaringanExtra::use_panelset()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#FF3C38", #headers
+  secondary_color = "#011936", #bold inline
+  inverse_header_color = "#FFFFFF",
+  colors = c(red = "#FF3C38",
+           grey = "#465362"),
+  #text_font_size = "1.1rem"
+)
+```
+
+class: title-slide center middle
+background-image: url("hands.png")
+background-position: right
+background-size: contain
+background-color: white
+
+.pull-left[
+# .red[`r rmarkdown::metadata$title`]
+
+### .red[`r rmarkdown::metadata$author`]
+
+### .red[`r rmarkdown::metadata$date`]
+]
+
+---
+
+# Today
+
+<br>
+
+```{css, echo=F}
+    /* Table width = 100% max-width */
+
+    .remark-slide table{
+        width: 100%;
+    }
+
+    /* Change the background color to white for shaded rows (even rows) */
+
+    .remark-slide thead, .remark-slide tr:nth-child(2n) {
+        background-color: white;
+    }
+```
+
+.pull-left[
+```{r, echo = FALSE}
+library(kableExtra)
+dt <- data.frame(schedule = c("Course introduction",
+                              "Group exercise: mini reading group", #30-45 mins
+                              "Break (15 mins)", #15 mins 11:00
+                              "Introduction to hypothesis testing", #45 min lecture 12:00
+                              "Lunch (45 mins)", # 45 mins  13:00
+                              "Group exercise: defining hypothesis", #30 minutes
+                              "(Re)Introducting some statistics"),
+                 start.time = c("10:00", 
+                          "", 
+                          "", 
+                          "11:00", 
+                          "12.00",
+                          "13:00",
+                          "13:30")) #45 minutes
+kbl(dt, align=c("l","c")) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+
+# Slides
+```
+.footnote[Times are approximate.]
+]
+
+--
+
+.pull-right[
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+]
+
+---
+
+class: middle
+
+```{css, echo=F}
+   .large { font-size: 120% }
+```
+
+# About this course
+
+.large[
+The course focuses on **hypothesis testing** and **reproducibility** in science. 
+
+You will learn:
+* how develop and test your own hypotheses
+* perform basic statistical tests 
+* apply this knowledge to reproduce (and potentially improve) published results.
+]
+
+.large[Each participant is assigned to a working and each group is assigned a published scientific paper (chosen by some of you).]
+
+---
+
+.left-column[
+
+
+<br>
+
+.red[
+## Group 1
+]
+
+<br>
+<br>
+
+.red[
+## Group 2
+]
+
+<br>
+<br>
+
+## Group 3
+]
+
+.right-column[
+[Statistical analysis of iron geochemical data suggests limited late Proterozoic oxygenation](https://www.nature.com/articles/nature14589)
+
+* Felix (online)
+* Carolin (in person)
+* Himadri (in person)
+* Pia (in person or online)
+
+
+[Isotopic and anatomical evidence of an herbivorous diet in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/24563098/)
+
+* Roy (online)
+* Isaiah (in person)
+* Janelle (online)
+* Zahra (in person)
+
+[High coral diversity is coupled with reef-building capacity during the Late Oligocene warming](https://riviste.unimi.it/index.php/RIPS/article/view/16332)
+
+* Kerstin (in person)
+* Johannes (in person)
+* Tim (in person)
+
+]
+
+
+---
+class: middle
+# Course evaluation
+
+.large[The goal is to reproduce the results of a published scientific article.]
+
+--
+
+.large[On **Friday afternoon** each group will present their findings.]
+
+--
+
+.large[You can use this [Google Slides Template](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) to prepare your presentation.]
+
+--
+
+.large[Within your working groups, try to do everything within time allocated for the course.]
+
+---
+class: middle
+# Will I have to use R?
+
+--
+
+.large[Not necessarily.]
+
+--
+
+.large[The focus of the is on the **concepts** behind hypothesis testing and reproducibility, not programming, although both things are easier if you use R.]
+
+--
+
+.large[It's up to each group how you divide the tasks.]
+
+---
+class: middle inverse
+
+.pull-left[
+<br>
+<br>
+<br>
+
+## Here all week to help!
+
+]
+
+
+.pull-right[
+<center><img src="https://media.giphy.com/media/SqIVSReiKpNAEnhAD6/giphy.gif" alt="" height="300px" /></center>
+]
+
+---
+
+background-image: url("fully-expecting.jpeg")
+background-size: contain
+class: middle
+
+--
+
+.pull-left[
+Many students don't enjoy learning about statistics $-$ I know, because I used to be one! 
+
+That's totally okay.]
+
+```{r, echo=FALSE}
+#--
+#I hope not
+```
+---
+class: middle
+
+# Why study statistics?
+
+* Humans are **biased**.
+
+--
+
+* Science is **complicated** and data is **messy**.
+
+--
+
+* It is deeply intertwined with **research design**.
+
+--
+
+* It makes the **literature** more accessible, since many papers you encounter will include statistics.
+
+--
+
+* Where there's **data** there's statistics!
+
+--
+
+* Having some statistical knowledge gives you a **superpower** &#x1F9B8;
+
+---
+class: middle
+# Mini reading group
+
+.pull-left[
+.large[**First group exercise**]
+
+In your working groups:
+
+Introduce yourselves and discuss your paper.
+* What is the paper about?
+* What was the general aim?
+* Did you like / not like it?
+
+To report back: prepare a two sentence summary.
+
+]
+
+--
+
+.pull-right[
+```{r echo=FALSE}
+countdown::countdown(
+  minutes = 15, 
+  seconds = 0, 
+  warn_when = 120, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+---
+class: middle center
+
+
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+
+# .black[Time for a break]
+
+
+
+---
+class: middle
+background-image: url("noahs-ark.jpg")
+background-size: contain
+background-position: right
+
+.pull-left[
+# Introduction to hypothesis testing</p>
+]
+
+---
+class: middle
+# Hypothesis testing
+
+.large[At its core, hypothesis testing is a very simple idea] $-$ .large[you, the researcher, have some theory about how the world works, and want to determine whether or not available data actually support your theory.]
+
+--
+
+.large[In practice, this can be be very tricky.]
+
+---
+class: middle
+## Research hypotheses
+
+.large[A **research hypothesis** involves make a substantive, testable scientific claim, i.e. has a firm basis in reality.]
+
+---
+class: middle
+
+.large[Some examples of research hypotheses:]
+
+* .large[**Listening to music reduces your ability to concentrate on other things**] $-$ .large[this is a relational claim about the causal relationship between two psychologically meaningful concepts (listening to music and paying attention to things). This is a reasonable scientific hypothesis.]
+
+```{r echo=FALSE}
+#* .large[*Intelligence is related to personality*] $-$ .large[this is another relation claim, this time about two psychological constructs (intelligence and personality). The claim is weaker because it proposes correlation not causation.]
+```
+--
+* .large[**Intelligence is the speed of information processing**] $-$ .large[this is not a relation claim, it's an ontological claim about the definition of intelligence. It's usually more straightforward to ask *"does X affect y?"* than *"what is X?"*.]
+
+.large[Most everyday research questions tend to be relational.]
+
+---
+class: middle
+
+.large[Some examples of statements that are **not** research hypotheses:]
+
+--
+* .large[**Love is a battlefield**] $-$ .large[too vague to be testable.]
+
+--
+
+* .large[**The first rule of fight club is don't talk about fight club**] $-$ .large[this is by definition true. Your hypotheses must have the possibility of being wrong!]
+--
+
+```{r echo=FALSE}
+#* .large[*More people in my experiment will say "yes" than say "no"*] $-$ .large[this is by definition true. Your hypotheses must have the possbility of being wrong!]
+```
+---
+class: middle
+## Research hypotheses vs. statistical hypotheses
+
+.large[A **research hypothesis** involves make a substantive, testable scientific claim, i.e. has a firm basis in reality.]
+
+--
+
+.large[Sometimes a research hypothesis can be a bit fuzzy, but ultimately research hypotheses are scientific claims.]
+
+--
+
+.large[In contrast, a **statistical hypothesis** must be mathematically precise and must correspond to specific claims about the data generating mechanism (i.e., the underlying population).]
+
+---
+class: middle
+## Statistical hypotheses
+
+.large[
+Say we have a species of birds and the birds can be either blue or red. We want to know, does being blue confer some advantage?
+
+* Birds have the same chance of being blue as being red.
+
+* More birds are blue.
+
+* More birds are red.
+]
+
+---
+class: middle
+## Statistical hypotheses
+
+.large[
+Say we have a species of bird and they can be either blue or red. We want to know, does being blue confer some advantage? Evidence for this might come from the numbers for each color.
+
+
+$\theta$ = the probability of being blue.
+
+* Birds have the same chance of being blue as being red. If this is true, then $\theta =$ 0.5.
+
+* More birds are blue. If this is true, $\theta >$ 0.5.
+
+* More birds are red. If this is true, $\theta <$ 0.5.
+
+* I know a different number of birds are blue than are red, but I didn’t keep my field notes well organised, so I don’t know which way round the numbers go. Then, $\theta \neq$ 0.5.
+]
+
+---
+class: middle
+## Statistical hypotheses
+
+.large[
+The examples on the previous slide are statistical hypotheses because they are statements about a 'population' parameter and are meaningfully relevant to my research hypothesis.
+
+Research hypothesis: being blue is better. Statistical hypothesis: $\theta >$ 0.5. 
+
+A statistical hypothesis test is a test of the statistical hypothesis, not the research hypothesis.
+]
+
+---
+class: middle
+
+# Null vs. alternative hypotheses 
+
+.large[
+The **null hypothesis** $H_0$ corresponds to the exact opposite of the thing I want to believe.
+
+The thing I'm actually interested in is the **alternative hypothesis** $H_1$.
+
+In our example, the null hypothesis is $\theta =$ 0.5, since that's what we'd except if there was no advantage of being blue. The alternative is $\theta >$ 0.5.
+
+The goal is not to show that the alternative hypothesis is (probably) true, the goal is to show that the null hypothesis is (probably) false.
+]
+---
+class: middle
+# Hypotheses
+
+.pull-left[
+.large[**Second group exercise**]
+
+Discuss the hypotheses in your paper.
+
+Try to identify the following:
+* The research hypothesis
+* The alternative hypothesis
+* The null hypothesis
+
+Make a note to add your presentation.
+Don't worry about getting it perfect, you can go back and refine it later.
+
+If your paper includes more than one, just pick one.
+
+]
+
+.pull-right[
+```{r echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+---
+class: middle
+
+# Two types of errors
+
+.large[
+If we flip a coin 10 times and all 10 times we get heads, this is pretty strong evidence that our coin is biased. But there's a 1 in 1024 chance that this would happen even if the coin was fair. 
+
+We **always** have to accept there's a chance that the results of any experiment are wrong.
+
+The goal behind statistical hypothesis testing is not to *eliminate* but to *minimize* errors.
+]
+
+---
+class: middle
+
+# Two types of errors
+
+.large[
+After we run the test, one of four things migth have happened:
+
+* $H_0$ is true $-$ correct decision
+
+* $H_0$ is true $-$ incorrect decision (type I error)
+
+* $H_0$ is false $-$ correct decision
+
+* $H_0$ is false $-$ incorrect decision (type II error)
+]
+
+---
+class: middle
+
+# Two types of errors
+
+.large[
+If we reject a null hypothesis that is actually true, then we have a **type I error**.
+
+If we retain the null hypothesis that is actually false, then we have a **type II error**.
+
+One of the most important design principles of hypothesis testing is to control the probability $\alpha$ of a **type I error**. $\alpha$ is called the significance level. By convention we often use $\alpha$ of 0.05, 0.01, 0.001.
+
+A hypothesis test that is said to have a significance level $\alpha$ has a type I error rate is no larger than $\alpha$.
+]
+
+---
+class: middle
+
+# Two types of errors
+
+.large[
+What about type II error rate? We care about this probability $\beta$ too. We refer to the **power** of the test, which is the probability that we reject the null hypothesis when it really is false, which is $1- \beta$. A powerful test has a small value of $\beta$. Note we don't have a corresponding level for $\beta$.
+]
+
+---
+
+class: middle
+
+# Sampling distributions
+
+.large[
+If the probability of being a blue bird is $\theta = 0.5$, what would we expect the data to look like? 
+
+We can also say $X/N = 0.5$. This is our **test statistic**. 
+
+We need to determine what the **sampling distribution of the test statistic** would be if the null hypothesis was true. We use this a tool for assessing how closely the null agrees with our data.
+]
+
+---
+
+class: middle
+
+<center><img src="samplingdist1.png" alt="" height="500px" /></center>
+
+The null hypothesis predicts that $X$ is binomially distributed.
+It says $X = 50$ is the most likely outcome, so we'll see somewhere between 40 and 60 blue birds.
+
+---
+class: middle
+
+# Critical regions and critical values
+
+.large[
+$X$ should be very big or very small in order to reject the null hypothesis. 
+
+If the null hypothesis is true, the sampling distribution of $X$ is Binomial $(0.5, N)$.
+
+If $\alpha = 0.05$, the critical region must cover 5% of this sampling distribution.
+]
+
+---
+class: middle center
+
+<center><img src="samplingdist2.png" alt="" height="500px" /></center>
+
+Our critical region consists of the most extreme values, known as the **tails** of the distribution.
+
+---
+class: middle
+
+.pull-left[
+
+.large[
+For $\alpha =$ .05, our critical regions correspond to  $X ≤$ 40 and $X≥$ 60.
+
+The numbers 40 and 60 are our **critical values**.
+
+If the number of blue birds is between 41 and 59, then we should retain the null hypothesis.
+
+
+If the number of blue birds is between 0 to 40 **or** between 60 to 100, then we should reject the null hypothesis $-$ this is a **two tailed test**.
+]
+]
+
+.pull.right[
+<img src="samplingdist2.png" alt="" height="400px" />
+]
+
+
+---
+class: middle center
+
+<center><img src="samplingdist3.png" alt="" height="500px" /></center>
+
+The critical region for a **one sided test**.
+
+---
+class: middle
+# Statisical significance
+
+.large[
+If the data allow us to reject the null hypothesis, we say that "the result is statistically significant", which is often shortened to "the result is significant". 
+
+This terminology reflects a time when "significant” meant something like "indicated", rather than its more recent meaning, which is closer to "important".
+]
+
+---
+# *p-value*
+
+.pull-left[
+
+.large[
+*p* is defined to be the smallest type I error rate $\alpha$ that you have to be willing to tolerate if you want to reject the null hypothesis.
+
+In the bird example, $X=$ 62 blue birds gives us 
+*p* = 0.021. The results can be interpreted as shown in the table, given *p* = 0.021.
+
+$X=$ 97 blue birds would give us *p* = 1.36 X $10^{-25}$, which is a tiny, tiny type I error rate.
+]
+]
+
+.pull-right[
+<center><img src="p-value.png" alt="" height="300px" /></center>
+]
+
+---
+class: middle
+# Reporting *p-values*
+
+.large[
+Option 1 $-$ you can state only that *p* $< \alpha$ for a significance level that you chose in advance, e.g., *p<*.05.
+
+But this means we're being forced to treat *p*=.051 in a fundamentally different way to *p*=.049.
+
+Option 2 $-$ just report the actual *p* value and let the reader make up their own minds about what an acceptable type I error rate is.
+
+But if you get *p=*.062, then it means that you have to be willing to tolerate a type I error rate of 6.2% to justify rejecting the null. If you personally find 6.2% intolerable, then you retain the null.
+]
+
+
+---
+class: middle
+# Intepreting *p*-values
+
+.pull-left[
+.large[**Third group exercise**]
+
+How have the authors in your paper interpreted the *p* values?
+
+Do this together with the exercise on the next slide.
+
+]
+
+---
+
+class: middle
+
+# Presentation
+
+.pull-left[
+.large[**Fourth group exercise**]
+
+Spend 15 minutes putting together the 'Scientific background' and 'Hypothesis' slides.
+
+Don't worry about getting it perfect, you can go back and refine it later.
+
+]
+
+.pull-right[
+```{r echo=FALSE}
+countdown::countdown(
+  minutes = 15, 
+  seconds = 0, 
+  warn_when = 12, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+---
+
+class: middle center
+
+
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+
+# .black[Time for a break]
+
