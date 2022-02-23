@@ -43,13 +43,14 @@ Further reading:
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("course-intro.html",NA,NA,NA,NA,NA,"revisiting-statistics.pdf")
+urls <- c("slides/reproducibility.pdf",NA,NA,NA,NA,NA,NA)
 dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                               "Group exercise: tracking down data",
-                              "Lunch (45 mins)",
+                              "Group exercise: reproducibility workflows",
+                              "Lunch break (45 mins)",
                               "Statistical tests"))
                  
-#dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
+dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
