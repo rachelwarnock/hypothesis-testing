@@ -43,12 +43,34 @@ Further reading:
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("slides/reproducibility.pdf",NA,NA,NA,NA,NA,NA)
+urls <- c("slides/reproducibility.pdf","slides/test-statistics.pdf",NA,NA,NA,NA,NA)
 dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                               "Group exercise: tracking down data",
                               "Group exercise: reproducibility workflows",
                               "Lunch break (45 mins)",
                               "Statistical tests"))
+                 
+dt$schedule[1] <- paste0("[", dt$schedule[1], "](",
+                         urls[1], ")")
+dt$schedule[5] <- paste0("[", dt$schedule[5], "](", urls[2], ")")
+
+kbl(dt) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+
+# Slides
+```
+
+* [Learning statistics with R: Chapter 1 and Chapter 11](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
+
+# Day 3
+
+```{r, echo = FALSE}
+library(kableExtra)
+urls <- c("slides/test-statistics2.pdf",NA,NA,NA,NA,NA,NA)
+dt <- data.frame(schedule = c("Statistical test II",
+                              "Group exercise: identifying tests",
+                              "Lunch break (60 mins)",
+                              "Work on presentation"))
                  
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
 kbl(dt) %>%
@@ -58,20 +80,27 @@ kbl(dt) %>%
 ```
 
 
-# Day 3
-
-Topics:
-
-* Statistical tests II
+* [How to perform tukey HSD test in R](https://www.r-bloggers.com/2021/08/how-to-perform-tukey-hsd-test-in-r/)
+* [Learning statistics with R: Chapter 13 and Chapter 14](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
 
 # Day 4
 
-Topics:
+```{r, echo = FALSE}
+library(kableExtra)
+urls <- c("slides/test-statistics2.pdf","https://www.dominos.de/speisekarte",NA,NA,NA,NA,NA)
+dt <- data.frame(schedule = c("Work on presentations",
+                              "Lunch break (45 mins)",
+                              "Presentation 1 (13:30)",
+                              "Presentation 2 (14:00)",
+                              "Presentation 3 (14:30)",
+                              "Pizza!"))
+                 
+dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
+dt$schedule[6] <- paste0("[", dt$schedule[6], "](", urls[2], ")")
+kbl(dt) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
-* Statistical tests III
+# Slides
+```
 
-# Day 5
-
-* Presentations
-* End of semester party
 

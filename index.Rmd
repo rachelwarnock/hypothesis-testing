@@ -30,7 +30,7 @@ Read the paper assigned to your working group.
 
 The goal is to reproduce the results of a published scientific article.
 On the last day of the course each group will present their findings.
-You can use this [Google Slides Template](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) to prepare your presentation.
+You can use this [Google Slides Template](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) and these [guidelines](https://docs.google.com/spreadsheets/d/1tfh-HZc3YM1HHnoTtw9s0O3vqZ89nuhaYFtsMmeCCQw/edit?usp=sharing) to prepare your presentation.
 
 Note this course is graded together with Oceanography.
 
@@ -43,5 +43,5 @@ Email rachel.warnock@fau.de
 \
 \
 
-Image source: rawpixel.com
+Images: rawpixel.com
 
