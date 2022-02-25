@@ -1,0 +1,150 @@
+---
+title: "Hypothesis testing summary"
+author: 
+  - "Rachel Warnock"
+date: "25.02.2022"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+#library(xaringanExtra)
+#xaringanExtra::use_panelset()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#FF3C38", #headers
+  secondary_color = "#011936", #bold inline
+  inverse_header_color = "#FFFFFF",
+  colors = c(red = "#FF3C38",
+           grey = "#465362"),
+  #text_font_size = "1.1rem"
+)
+```
+
+class: title-slide center middle
+background-image: url("hands.png")
+background-position: right
+background-size: contain
+background-color: white
+
+.pull-left[
+# .red[`r rmarkdown::metadata$title`]
+
+### .red[`r rmarkdown::metadata$author`]
+
+### .red[`r rmarkdown::metadata$date`]
+]
+
+---
+class: middle center
+background-size: contain
+background-position: middle
+background-image: url("reprod-study.png")
+
+---
+class: middle
+```{css, echo=F}
+   .large { font-size: 130% }
+```
+
+# Reproducibility in other fields
+
+.large[Aim: replicate (and reproduce) 193 experiments from 53 high-impact papers.]
+
+.large[In the end, they were able to repeat 50
+experiments from 23 papers.]
+
+.large[The problems:
+
+* **None** of the 193 experiments
+were described in sufficient detail in the original paper to repeat the experiment.
+* key descriptive details necessary for statistics available for only 4 of 193 experiments.
+* despite contacting the authors, they were missing data for 68% of experiments.]
+
+
+.footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
+
+---
+class: middle 
+
+# Reproducibility in other fields
+
+.large[Authors were extremely or very helpful for 41% of experiments, minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments.]
+
+.large[Once experimental work started, 67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented.]
+
+.footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
+
+---
+class: middle
+background-size: contain
+background-position: right
+background-image: url("barriers.png")
+
+.pull-left[
+.large["*It is hard to assess whether reported findings are credible.*"]
+.footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
+]
+
+
+
+---
+class: middle
+
+# Research design
+
+.large[A **hypothesis testing framework** can help guide your entire project design *objectively*, including choice of data and statistical tests.]
+
+---
+class: middle
+background-size: contain
+background-position: left
+background-image: url("at-first.png")
+
+.pull-right[
+# Reproducibility
+
+.large[R and R Markdown (or other tools for organising code and notes) can help:
+* keeping track progress
+* sharing progress (during & after your project)
+* enable reproducibility]
+]
+
+---
+class: middle
+
+# Thank you!
+
+---
+class: middle
+background-size: contain
+background-position: right
+background-image: url("https://media.giphy.com/media/hTUyx24ANT0h16iTE0/giphy.gif")
+
+.pull-left[# That's a wrap!]
+
+
+
+

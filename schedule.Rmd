@@ -60,6 +60,8 @@ kbl(dt) %>%
 # Slides
 ```
 
+Further reading:
+
 * [Learning statistics with R: Chapter 1 and Chapter 11](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
 
 # Day 3
@@ -79,6 +81,7 @@ kbl(dt) %>%
 # Slides
 ```
 
+Further reading:
 
 * [How to perform tukey HSD test in R](https://www.r-bloggers.com/2021/08/how-to-perform-tukey-hsd-test-in-r/)
 * [Learning statistics with R: Chapter 13 and Chapter 14](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
@@ -87,20 +90,25 @@ kbl(dt) %>%
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("slides/test-statistics2.pdf","https://www.dominos.de/speisekarte",NA,NA,NA,NA,NA)
+urls <- c("slides/test-statistics2.pdf","https://www.dominos.de/speisekarte","slides/summary.html",NA,NA,NA,NA)
 dt <- data.frame(schedule = c("Work on presentations",
                               "Lunch break (45 mins)",
                               "Presentation 1 (13:30)",
                               "Presentation 2 (14:00)",
                               "Presentation 3 (14:30)",
+                              "Summary",
                               "Pizza!"))
                  
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
-dt$schedule[6] <- paste0("[", dt$schedule[6], "](", urls[2], ")")
+dt$schedule[6] <- paste0("[", dt$schedule[6], "](", urls[3], ")")
+dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[2], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
 # Slides
 ```
 
+Further reading:
 
+* [What should the title of your next paper be?]( https://cnidaria.nat.uni-erlangen.de/shiny/users/nussaibah/generator/)
+* [Why the P Value Is Not Enough](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/)
