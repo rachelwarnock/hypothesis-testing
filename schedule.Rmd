@@ -110,5 +110,7 @@ kbl(dt) %>%
 
 Further reading:
 
-* [What should the title of your next paper be?]( https://cnidaria.nat.uni-erlangen.de/shiny/users/nussaibah/generator/)
 * [Why the P Value Is Not Enough](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/)
+* [Rewriting results sections in the language of evidence](https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(21)00284-6)
+* [Rewriting results in the language of compatibility](https://www.sciencedirect.com/science/article/abs/pii/S0169534722000246?dgcid=author)
+* [What should the title of your next paper be?]( https://cnidaria.nat.uni-erlangen.de/shiny/users/nussaibah/generator/)
