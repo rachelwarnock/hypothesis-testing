@@ -9,7 +9,8 @@ output:
 
 \
 
-Course material will be uploaded here throughout the week.
+The schedule is approximate.
+Course material will be updated here throughout the week.
 
 # Day 1
 
@@ -68,13 +69,14 @@ Further reading:
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("slides/test-statistics2.pdf",NA,NA,NA,NA,NA,NA)
-dt <- data.frame(schedule = c("Statistical test II",
+urls <- c(NA,NA,"slides/test-statistics2.pdf",NA,NA,NA,NA,NA)
+dt <- data.frame(schedule = c("Intro to chatGTP",
                               "Group exercise: identifying tests",
+                              "Statistical tests II",
                               "Lunch break (60 mins)",
                               "Work on presentation"))
                  
-dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
+dt$schedule[3] <- paste0("[", dt$schedule[3], "](", urls[3], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 

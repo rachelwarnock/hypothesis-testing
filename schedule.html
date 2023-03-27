@@ -13,7 +13,7 @@
 
 <title>Schedule</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
@@ -65,6 +65,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -142,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -310,7 +318,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -347,7 +355,8 @@ div.tocify {
 
 <p><br />
 </p>
-<p>Course material will be uploaded here throughout the week.</p>
+<p>The schedule is approximate. Course material will be updated here
+throughout the week.</p>
 <div id="day-1" class="section level1">
 <h1>Day 1</h1>
 <table class="table table-striped" style="width: auto !important; ">
@@ -391,15 +400,19 @@ Group exercise: defining hypothesis
 </tr>
 <tr>
 <td style="text-align:left;">
-<a href="slides/revisiting-statistics.pdf">(Re)Introducting some statistics</a>
+<a href="slides/revisiting-statistics.pdf">(Re)Introducting some
+statistics</a>
 </td>
 </tr>
 </tbody>
 </table>
 <p>Further reading:</p>
 <ul>
-<li><a href="https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html">Learning statistics with R: Chapter 1 and Chapter 11</a></li>
-<li><a href="https://tinystats.github.io/teacups-giraffes-and-statistics/">tinystats.github.io/teacups-giraffes-and-statistics</a></li>
+<li><a
+href="https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html">Learning
+statistics with R: Chapter 1 and Chapter 11</a></li>
+<li><a
+href="https://tinystats.github.io/teacups-giraffes-and-statistics/">tinystats.github.io/teacups-giraffes-and-statistics</a></li>
 </ul>
 </div>
 <div id="day-2" class="section level1">
@@ -415,7 +428,8 @@ schedule
 <tbody>
 <tr>
 <td style="text-align:left;">
-<a href="slides/reproducibility.pdf">Intro to reproducibility and data accessibility</a>
+<a href="slides/reproducibility.pdf">Intro to reproducibility and data
+accessibility</a>
 </td>
 </tr>
 <tr>
@@ -442,7 +456,9 @@ Lunch break (45 mins)
 </table>
 <p>Further reading:</p>
 <ul>
-<li><a href="https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html">Learning statistics with R: Chapter 1 and Chapter 11</a></li>
+<li><a
+href="https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html">Learning
+statistics with R: Chapter 1 and Chapter 11</a></li>
 </ul>
 </div>
 <div id="day-3" class="section level1">
@@ -458,12 +474,17 @@ schedule
 <tbody>
 <tr>
 <td style="text-align:left;">
-<a href="slides/test-statistics2.pdf">Statistical test II</a>
+Intro to chatGTP
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Group exercise: identifying tests
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="slides/test-statistics2.pdf">Statistical tests II</a>
 </td>
 </tr>
 <tr>
@@ -480,8 +501,12 @@ Work on presentation
 </table>
 <p>Further reading:</p>
 <ul>
-<li><a href="https://www.r-bloggers.com/2021/08/how-to-perform-tukey-hsd-test-in-r/">How to perform tukey HSD test in R</a></li>
-<li><a href="https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html">Learning statistics with R: Chapter 13 and Chapter 14</a></li>
+<li><a
+href="https://www.r-bloggers.com/2021/08/how-to-perform-tukey-hsd-test-in-r/">How
+to perform tukey HSD test in R</a></li>
+<li><a
+href="https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html">Learning
+statistics with R: Chapter 13 and Chapter 14</a></li>
 </ul>
 </div>
 <div id="day-4" class="section level1">
@@ -534,10 +559,17 @@ Presentation 3 (14:30)
 </table>
 <p>Further reading:</p>
 <ul>
-<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/">Why the P Value Is Not Enough</a></li>
-<li><a href="https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(21)00284-6">Rewriting results sections in the language of evidence</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169534722000246?dgcid=author">Rewriting results in the language of compatibility</a></li>
-<li><a href="https://cnidaria.nat.uni-erlangen.de/shiny/users/nussaibah/generator/">What should the title of your next paper be?</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/">Why
+the P Value Is Not Enough</a></li>
+<li><a
+href="https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(21)00284-6">Rewriting
+results sections in the language of evidence</a></li>
+<li><a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0169534722000246?dgcid=author">Rewriting
+results in the language of compatibility</a></li>
+<li><a
+href="https://cnidaria.nat.uni-erlangen.de/shiny/users/nussaibah/generator/">What
+should the title of your next paper be?</a></li>
 </ul>
 </div>
 
