@@ -63,6 +63,7 @@
   --black: #000000;
   --red: #FF3C38;
   --grey: #003844;
+  --blue: #1F85DE;
 }
 
 html {
@@ -311,5 +312,11 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 .bg-grey {
   background-color: var(--grey);
+}
+.blue {
+  color: var(--blue);
+}
+.bg-blue {
+  background-color: var(--blue);
 }
 
