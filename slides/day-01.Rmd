@@ -2,7 +2,7 @@
 title: "Hypothesis testing"
 author: 
   - "Rachel Warnock"
-date: "21.02.2022"
+date: "03.04.2023"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -35,10 +35,10 @@ knitr::opts_chunk$set(
 library(xaringanthemer)
 style_duo_accent(
   primary_color = "#FF3C38", #headers
-  secondary_color = "#011936", #bold inline
-  inverse_header_color = "#FFFFFF",
+  secondary_color = "#006C67", #bold inline #011936
+  inverse_header_color = "#FFB100", #FFFFFF
   colors = c(red = "#FF3C38",
-           grey = "#465362"),
+           grey = "#003844"),
   #text_font_size = "1.1rem"
 )
 ```
@@ -85,8 +85,8 @@ dt <- data.frame(schedule = c("Course introduction",
                               "Break (15 mins)", #15 mins 11:00
                               "Introduction to hypothesis testing", #45 min lecture 12:00
                               "Lunch (45 mins)", # 45 mins  13:00
-                              "Group exercise: defining hypothesis", #30 minutes
-                              "(Re)Introducting some statistics"),
+                              "Group exercise: defining hypotheses", #30 minutes
+                              "(Re)Introduction to the normal distribution"),
                  start.time = c("10:00", 
                           "", 
                           "", 
@@ -119,7 +119,7 @@ class: middle
 # About this course
 
 .large[
-The course focuses on **hypothesis testing** and **reproducibility** in science. 
+The course focuses on statistical **hypothesis testing** and **reproducibility** in science. 
 
 You will learn:
 * how develop and test your own hypotheses
@@ -127,13 +127,14 @@ You will learn:
 * apply this knowledge to reproduce (and potentially improve) published results.
 ]
 
-.large[Each participant is assigned to a working and each group is assigned a published scientific paper (chosen by some of you).]
+.large[Each participant is assigned to a working and each group is assigned a published scientific paper.]
 
 ---
 
 .left-column[
 
 
+<br>
 <br>
 
 .red[
@@ -142,44 +143,49 @@ You will learn:
 
 <br>
 <br>
+<br>
+<br>
+<br>
 
 .red[
 ## Group 2
 ]
 
-<br>
-<br>
-
-## Group 3
 ]
 
 .right-column[
-[Statistical analysis of iron geochemical data suggests limited late Proterozoic oxygenation](https://www.nature.com/articles/nature14589)
 
-* Felix (online)
-* Carolin (in person)
-* Himadri (in person)
-* Pia (in person or online)
+<br>
+<br>
 
+.large[
+[*Isotopic and anatomical evidence of an herbivorous diet in the Early Tertiary giant bird Gastornis*](https://pubmed.ncbi.nlm.nih.gov/24563098/)
+]
 
-[Isotopic and anatomical evidence of an herbivorous diet in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/24563098/)
+* Lars (online?)
+* Nida
+* Toshiro
 
-* Roy (online)
-* Isaiah (in person)
-* Janelle (online)
-* Zahra (in person)
+<br>
+<br>
 
-[High coral diversity is coupled with reef-building capacity during the Late Oligocene warming](https://riviste.unimi.it/index.php/RIPS/article/view/16332)
+.large[
+[*High coral diversity is coupled with reef-building capacity during the Late Oligocene warming*](https://riviste.unimi.it/index.php/RIPS/article/view/16332)
+]
 
-* Kerstin (in person)
-* Johannes (in person)
-* Tim (in person)
+* Bastian
+* Taeya
 
 ]
 
 
 ---
-class: middle
+
+<br>
+<br>
+<br>
+<br>
+
 # Course evaluation
 
 .large[The goal is to reproduce the results of a published scientific article.]
@@ -190,14 +196,18 @@ class: middle
 
 --
 
-.large[You can use this [Google Slides Template](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) to prepare your presentation.]
+.large[You can use this [*Google Slides Template*](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) to prepare your presentation.]
 
 --
 
 .large[Within your working groups, try to do everything within time allocated for the course.]
 
 ---
-class: middle
+<br>
+<br>
+<br>
+<br>
+
 # Will I have to use R?
 
 --
@@ -216,17 +226,19 @@ class: middle
 class: middle inverse
 
 .pull-left[
-<br>
+
 <br>
 <br>
 
-## Here all week to help!
+.center[
+## I'm here all week to help!
+]
 
 ]
 
 
 .pull-right[
-<center><img src="https://media.giphy.com/media/SqIVSReiKpNAEnhAD6/giphy.gif" alt="" height="300px" /></center>
+<center><img src="https://mochimochiland.com/wp-content/uploads/cheerupDRAFT1sm.gif" alt="" height="300px" /></center>
 ]
 
 ---
@@ -238,6 +250,7 @@ class: middle
 --
 
 .pull-left[
+
 Many students don't enjoy learning about statistics $-$ I know, because I used to be one! 
 
 That's totally okay.]
@@ -247,7 +260,10 @@ That's totally okay.]
 #I hope not
 ```
 ---
-class: middle
+
+<br>
+<br>
+<br>
 
 # Why study statistics?
 
@@ -287,7 +303,7 @@ Introduce yourselves and discuss your paper.
 * What was the general aim?
 * Did you like / not like it?
 
-To report back: prepare a two sentence summary.
+To report back: prepare a three sentence summary.
 
 ]
 
@@ -329,7 +345,11 @@ background-position: right
 ]
 
 ---
-class: middle
+
+<br>
+<br>
+<br>
+
 # Hypothesis testing
 
 .large[At its core, hypothesis testing is a very simple idea] $-$ .large[you, the researcher, have some theory about how the world works, and want to determine whether or not available data actually support your theory.]
@@ -339,10 +359,14 @@ class: middle
 .large[In practice, this can be be very tricky.]
 
 ---
-class: middle
-## Research hypotheses
 
-.large[A **research hypothesis** involves make a substantive, testable scientific claim, i.e. has a firm basis in reality.]
+<br>
+<br>
+<br>
+
+# Research hypotheses
+
+.large[A **research hypothesis** involves make a substantive, testable scientific claim, i.e., has a firm basis in reality.]
 
 ---
 class: middle

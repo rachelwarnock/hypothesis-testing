@@ -22,8 +22,8 @@ dt <- data.frame(schedule = c("Course introduction",
                               "Break (15 mins)", #15 mins 11:00
                               "Introduction to hypothesis testing", #45 min lecture 12:00
                               "Lunch (45 mins)", # 45 mins  13:00
-                              "Group exercise: defining hypothesis", #30 minutes
-                              "(Re)Introducting some statistics")) #45 minutes
+                              "Group exercise: defining hypotheses", #30 minutes
+                              "(Re)Introduction to the normal distribution")) #45 minutes
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
 dt$schedule[4] <- paste0("[", dt$schedule[4], "](", urls[4], ")")
 dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
