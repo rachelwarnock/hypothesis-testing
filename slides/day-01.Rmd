@@ -81,7 +81,7 @@ background-color: white
 ```
 
 .pull-left[
-```{r, echo = FALSE}
+```{r schedule, echo = FALSE}
 library(kableExtra)
 dt <- data.frame(schedule = c("Course introduction",
                               "Group exercise: mini reading group", #30-45 mins
@@ -300,7 +300,7 @@ class: middle
 * Having some statistical knowledge gives you a **superpower** &#x1F9B8;
 ]
 
-```{r echo=FALSE}
+```{r, echo=FALSE}
 # We need to be able to build trust in our discoveries.
 # Messy data - perhaps especially in paleo?
 # Results can be unexpected or counter intuitive
@@ -310,7 +310,7 @@ class: middle
 class: middle
 
 .pull-left[
-```{r out.width = '100%', echo = FALSE}
+```{r, out.width = '100%', echo = FALSE}
 # local
 knitr::include_graphics("fossil.png")
 ```
@@ -322,7 +322,7 @@ knitr::include_graphics("fossil.png")
 ]
 
 
-```{r echo=FALSE}
+```{r, echo=FALSE}
 # The data are messy
 # We can't re-observe the past
 # There aren't universal truths, like there are in physics
@@ -349,7 +349,7 @@ To report back: prepare a three sentence summary.
 --
 
 .pull-right[
-```{r echo=FALSE}
+```{r, echo=FALSE}
 countdown::countdown(
   minutes = 15, 
   seconds = 0, 
@@ -381,6 +381,8 @@ background-position: right
 
 .pull-left[
 # Introduction to hypothesis testing</p>
+
+### Day 1 - Part 2
 ]
 
 ---
@@ -454,7 +456,7 @@ background-position: right
 class: middle
 
 .pull-left[
-```{r out.width = '100%', echo = FALSE}
+```{r, out.width = '100%', echo = FALSE}
 # local
 knitr::include_graphics("fossil.png")
 ```
@@ -619,7 +621,7 @@ If your paper includes more than one, just pick one.
 ]
 
 .pull-right[
-```{r echo=FALSE}
+```{r, echo=FALSE}
 countdown::countdown(
   minutes = 10, 
   seconds = 0, 
@@ -878,7 +880,10 @@ If the data are extremely implausible according to the null hypothesis, then the
 
 
 ---
-class: middle
+<br>
+<br>
+<br>
+
 # Reporting *p-values*
 
 .large[
@@ -908,7 +913,7 @@ Spend 15 minutes putting together the 'Scientific background' and 'Hypothesis' s
 ]
 
 .pull-right[
-```{r echo=FALSE}
+```{r, echo=FALSE}
 countdown::countdown(
   minutes = 15, 
   seconds = 0, 
@@ -926,8 +931,119 @@ countdown::countdown(
 
 class: middle center
 
-
 <center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
 
 # .black[Time for a break]
 
+---
+  class: middle
+background-image: url("giraffe.png")
+background-size: contain
+background-size: 70%
+background-position: right
+
+.pull-left[
+  ## (Re)Introduction to the normal distribution
+  
+  ### And a few other terms
+  
+  ### Day 1 - Part 3
+]
+
+---
+  background-image: url("giraffe.png")
+background-size: contain
+background-size: 70%
+background-position: right
+
+<br>
+  <br>
+  <br>
+  
+  .pull-left[
+    # Objectives
+    
+    .large[
+      * The Normal Distribution
+      
+      * Mean, median, mode
+      
+      * Spread of the data
+      
+      * Standard Error
+    ]
+    
+    .footnote[Further reading [*Teacups giraffes and statistics*](https://tinystats.github.io/teacups-giraffes-and-statistics/)]
+    
+  ]
+
+---
+  class: middle
+background-image: url("cont_discrete.png")
+background-size: contain
+background-size: 70%
+background-position: right
+
+.pull-left[
+  # Types of data
+  
+]
+
+---
+  class: middle
+background-image: url("nom_ord_bin.png")
+background-size: contain
+
+
+---
+  class: middle
+# Data
+
+.pull-left[
+  .large[**Fourth group exercise**]
+  
+  What types of data are used in the tests in your paper?
+    
+    Spend 5 minutes putting together the 'Data' slide.
+]
+
+.pull-right[
+  ```{r, echo=FALSE}
+  countdown::countdown(
+    minutes = 5, 
+    seconds = 0, 
+    warn_when = 1, 
+    style = "position: relative; width: min-content; margin: 1em auto;",
+    #color_running_background = "#31b09e",
+    color_warning_background = "#f79334",
+    #color_finished_background = "#b56b6f",
+    #color_finished_text = "#eaeaea"
+  )
+  ```
+]
+
+Not sure the following is necessary - suggest using the Variance lecture from R programming
+
+---
+  background-image: url("giraffes2.png")
+background-size: contain
+background-position: bottom
+
+## Imagine that you've visited two islands of tiny giraffes...
+
+
+---
+  background-image: url("giraffes3.png")
+background-size: contain
+background-position: bottom
+
+---
+background-image: url("normal1.png")
+background-size: contain
+
+
+
+
+```{r, eval=FALSE, echo=FALSE}
+renderthis::to_pdf("day-01.Rmd", complex_slides = TRUE)
+```
