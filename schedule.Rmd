@@ -16,14 +16,15 @@ Course material will be updated here throughout the week.
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("slides/day-01.html",NA,NA,"slides/day-01.html#27",NA,NA,"slides/day-01.html#72")
+urls <- c("slides/day-01.html",NA,NA,"slides/day-01.html#27",NA,NA,"slides/day-01.html#72", NA)
 dt <- data.frame(schedule = c("Course introduction",
                               "Group exercise: mini reading group", #30-45 mins
                               "Break (15 mins)", #15 mins 11:00
                               "Introduction to hypothesis testing", #45 min lecture 12:00
                               "Lunch (45 mins)", # 45 mins  13:00
                               "Group exercise: defining hypotheses", #30 minutes
-                              "(Re)Introduction to the normal distribution")) #45 minutes
+                              "(Re)Introduction to the normal distribution",
+                              "Group exercise: identify the data")) #45 minutes
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
 dt$schedule[4] <- paste0("[", dt$schedule[4], "](", urls[4], ")")
 dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
@@ -35,7 +36,7 @@ kbl(dt) %>%
 
 Further reading:
 
-* [Slides from today (PDF)](slides/day-01.pdf)
+* [Slides from today (PDF)](https://drive.google.com/file/d/1_-8-jZbND2gAx1kS0VJ3iAQO1qowFXAk)
 * [Learning statistics with R: Chapter 1 and Chapter 11](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
 * [tinystats.github.io/teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/)
 

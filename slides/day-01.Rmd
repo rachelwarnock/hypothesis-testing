@@ -45,7 +45,7 @@ style_duo_accent(
 ```
 
 class: title-slide center middle
-background-image: url("hands.png")
+background-image: url("img/hands.png")
 background-position: right
 background-size: contain
 background-color: white
@@ -246,7 +246,7 @@ class: middle inverse
 
 ---
 
-background-image: url("fully-expecting.jpeg")
+background-image: url("img/fully-expecting.jpeg")
 background-size: contain
 class: middle
 
@@ -312,7 +312,7 @@ class: middle
 .pull-left[
 ```{r, out.width = '100%', echo = FALSE}
 # local
-knitr::include_graphics("fossil.png")
+knitr::include_graphics("img/fossil.png")
 ```
 ]
 
@@ -375,7 +375,7 @@ class: middle center
 
 ---
 class: middle
-background-image: url("noahs-ark.jpg")
+background-image: url("img/noahs-ark.jpg")
 background-size: contain
 background-position: right
 
@@ -386,7 +386,7 @@ background-position: right
 ]
 
 ---
-background-image: url("noahs-ark.jpg")
+background-image: url("img/noahs-ark.jpg")
 background-size: contain
 background-position: right
 
@@ -458,7 +458,7 @@ class: middle
 .pull-left[
 ```{r, out.width = '100%', echo = FALSE}
 # local
-knitr::include_graphics("fossil.png")
+knitr::include_graphics("img/fossil.png")
 ```
 ]
 
@@ -511,7 +511,7 @@ tautology = saying the same thing twice in different words
 .large[In contrast, a **statistical hypothesis** must be mathematically precise and must correspond to specific claims about the data generating mechanism (i.e., the underlying population).]
 
 ---
-background-image: url("blue-bird.png")
+background-image: url("img/blue-bird.png")
 background-size: contain
 background-size: 15%
 background-position: 90% 10%
@@ -535,7 +535,7 @@ Say we have a species of bird and the birds can be either **.blue[blue]** or **.
 ]
 
 ---
-background-image: url("blue-bird.png")
+background-image: url("img/blue-bird.png")
 background-size: contain
 background-size: 15%
 background-position: 90% 10%
@@ -560,7 +560,7 @@ $\theta$ = the probability of being .blue[blue].
 ]
 
 ---
-background-image: url("blue-bird.png")
+background-image: url("img/blue-bird.png")
 background-size: contain
 background-size: 15%
 background-position: 90% 10%
@@ -719,7 +719,7 @@ Statistical tests are designed to minimise $\alpha$, not $\beta$.
 ]
 
 ---
-background-image: url("blue-bird.png")
+background-image: url("img/blue-bird.png")
 background-size: contain
 background-size: 15%
 background-position: 90% 10%
@@ -750,7 +750,7 @@ We need to determine what the **sampling distribution of the test statistic** wo
 
 class: middle
 
-<center><img src="samplingdist1.png" alt="" height="500px" /></center>
+<center><img src="img/samplingdist1.png" alt="" height="500px" /></center>
 
 The null hypothesis predicts that $X$ is [*binomially distributed*](https://en.wikipedia.org/wiki/Binomial_distribution).
 It says $X = 50/100$ is the most likely outcome, so we'd expect to see somewhere between 40 and 60 .blue[blue] birds.
@@ -771,7 +771,7 @@ If $\alpha = 0.05$, the critical region must cover 5% of this sampling distribut
 ---
 class: middle center
 
-<center><img src="samplingdist2.png" alt="" height="500px" /></center>
+<center><img src="img/samplingdist2.png" alt="" height="500px" /></center>
 
 Our critical region consists of the most extreme values, known as the **tails** of the distribution.
 
@@ -790,7 +790,9 @@ The **critical region** corresponds to the values of $X$ for which we would reje
 ]
 
 .pull.right[
-<img src="samplingdist2.png" alt="" height="400px" />
+
+<img src="img/samplingdist2.png" alt="" height="400px" />
+
 ]
 
 ---
@@ -810,14 +812,14 @@ If the number of blue birds is between 0 to 40 **or** between 60 to 100, then we
 ]
 
 .pull.right[
-<img src="samplingdist2.png" alt="" height="400px" />
+<img src="img/samplingdist2.png" alt="" height="400px" />
 ]
 
 
 ---
 class: middle center
 
-<center><img src="samplingdist3.png" alt="" height="500px" /></center>
+<center><img src="img/samplingdist3.png" alt="" height="500px" /></center>
 
 The critical region for a **one sided test**. We would use this to test for $\theta >$ 0.5 (i.e, more birds are .blue[blue]).
 
@@ -850,7 +852,7 @@ $X=$ 97 .blue[blue] birds would give us *p* = 1.36 X $10^{-25}$, which is a tiny
 ]
 
 .pull-right[
-<center><img src="p-value.png" alt="" height="350px" /></center>
+<center><img src="img/p-value.png" alt="" height="350px" /></center>
 ]
 
 ---
@@ -873,7 +875,8 @@ If the data are extremely implausible according to the null hypothesis, then the
 ]
 
 .pull.right[
-<img src="samplingdist2.png" alt="" height="400px" />
+
+<center><img src="img/samplingdist2.png" alt="" height="500px" /></center>
 ]
 
 
@@ -937,7 +940,7 @@ class: middle center
 
 ---
 class: middle
-background-image: url("giraffe.png")
+background-image: url("img/giraffe.png")
 background-size: contain
 background-size: 70%
 background-position: right
@@ -951,7 +954,7 @@ background-position: right
 ]
 
 ---
-background-image: url("giraffe.png")
+background-image: url("img/giraffe.png")
 background-size: contain
 background-size: 70%
 background-position: right
@@ -977,7 +980,7 @@ background-position: right
 
 ---
 class: middle
-background-image: url("cont_discrete.png")
+background-image: url("img/cont_discrete.png")
 background-size: contain
 background-size: 70%
 background-position: right
@@ -989,7 +992,7 @@ background-position: right
 
 ---
 class: middle
-background-image: url("nom_ord_bin.png")
+background-image: url("img/nom_ord_bin.png")
 background-size: contain
 
 
