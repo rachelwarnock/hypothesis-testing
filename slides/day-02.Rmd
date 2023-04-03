@@ -1,0 +1,529 @@
+---
+title: "Reproducibility & data accessibility in science"
+author:
+  - "Rachel Warnock"
+date: "04.04.2023"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+#library(xaringanExtra)
+#xaringanExtra::use_panelset()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#FF3C38", #headers
+  secondary_color = "#006C67", #bold inline #011936
+  inverse_header_color = "#FFB100", #FFFFFF
+  colors = c(red = "#FF3C38",
+           grey = "#003844",
+           blue = "#1F85DE"),
+  #text_font_size = "1.1rem"
+)
+```
+
+class: title-slide center middle
+background-image: url("img/hands.png")
+background-position: right
+background-size: contain
+background-color: white
+
+.pull-left[
+# .red[`r rmarkdown::metadata$title`]
+
+### .red[`r rmarkdown::metadata$author`]
+
+### .red[`r rmarkdown::metadata$date`]
+]
+
+---
+
+# Today
+
+<br>
+
+```{css, echo=F}
+    /* Table width = 100% max-width */
+
+    .remark-slide table{
+        width: 100%;
+    }
+
+    /* Change the background color to white for shaded rows (even rows) */
+
+    .remark-slide thead, .remark-slide tr:nth-child(2n) {
+        background-color: white;
+    }
+    
+    
+```
+
+.pull-left[
+```{r schedule, echo = FALSE}
+library(kableExtra)
+dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
+                              "Group exercise: tracking down data", #30-45 mins
+                              "Break (15 mins)", #15 mins 11:00
+                              "Group exercise: reproducibile workflows", 
+                              "Lunch (45 mins)", # 45 mins  13:00
+                              "Statistical tests I", #30 minutes
+                              "Github tutorial (optional)"),
+                 start.time = c("10:00", 
+                          "", 
+                          "", 
+                          "", 
+                          "12.00",
+                          "13:00",
+                          "13:30")) #45 minutes
+kbl(dt, align=c("l","c")) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+
+# Slides
+```
+.footnote[Times are approximate.]
+]
+
+--
+
+.pull-right[
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+]
+
+---
+class: middle
+
+```{css, echo=F}
+   .large { font-size: 120% }
+   .huge { font-size: 160% }
+```
+
+# Reproducibility
+
+.large[
+Requires that scientific papers provide sufficiently clear instructions to allow for successful **repetition** and **extension** of analyses.
+]
+
+
+---
+class: middle
+
+# Replicability vs. reproducibility
+
+.large[
+**Replicability** — Obtaining consistent results across studies aimed at answering the same scientific question.
+
+**Reproducibility** — Obtaining consistent computational results using the same input data, computational steps, methods, code and analytical conditions.
+
+]
+
+---
+background-image: url("img/Rworkflow.png")
+background-size: contain
+
+---
+class: middle
+background-image: url("img/groups.png")
+background-size: contain
+background-size: 40%
+background-position: 10% 10%
+
+.pull-right[
+.huge[
+We’re often doing complicated things — with more data, complex tools and increased interdisciplinary research (across multiple research teams).
+]
+]
+---
+<br>
+<br>
+<br>
+
+.huge[
+But lessons in reproducibility are valuable even when you’re working alone or not doing something hugely complex! 
+
+There are many reasons to benefit from the steps taken to ensure reproducibility.
+]
+
+--
+
+.huge[Research shows scientific papers often leave out details that are necessary or essential to reproduce the results.]
+
+---
+class: middle
+background-image: url("img/reproducibility_1.png")
+background-size: contain
+background-size: 65%
+background-position: 10% 10%
+
+.pull-right[
+.pull-right[
+.large[Nature surveyed 1,576 scientists online to get their thoughts on reproducibility in their field.]
+]
+]
+
+---
+class: middle
+background-image: url("img/reproducibility_2.png")
+background-size: contain
+
+---
+class: middle
+background-image: url("img/reproducibility_3.png")
+background-size: contain
+
+---
+class: middle
+background-image: url("img/reproducibility_4.png")
+background-size: contain
+
+---
+class: middle
+background-image: url("img/reproducibility_5.png")
+background-size: contain
+
+---
+<br>
+<br>
+<br>
+
+# More on this story
+
+.huge[
+Blog by coauthor Kate Klaskowski
+[*What to do when you don’t trust your data anymore*](https://laskowskilab.faculty.ucdavis.edu/2020/01/29/retractions/)
+]
+
+.large[
+Blog by American Naturalist editor Dan Bolnick
+[*17 months*](http://ecoevoevoeco.blogspot.com/2021/05/17-months.html)
+]
+
+---
+class: middle
+background-image: url("img/reproducibility_6.png")
+background-size: contain
+
+---
+class: middle
+
+.huge[Note this story is more replicability and scientific integrity than reproducibility, but the two are closely linked.]
+
+---
+class: middle
+background-image: url("img/reproducibility_7.png")
+background-size: contain
+
+---
+<br>
+<br>
+<br>
+
+# Benefits of reproducibility to the community
+
+.large[
+* Saves time, effort and money. 
+
+* Increases transparency, helps others find mistakes.
+
+* Increases scientific integrity.
+
+* It makes science more accessible and equitable.
+
+* Many funding agencies / journals have requirements.
+]
+
+---
+<br>
+<br>
+<br>
+
+# Benefits of reproducibility to **you**
+
+.large[
+* At an absolute minimum you should be able to reproduce the results yourself.
+
+* Part of ensuring reproducibility is doing future you a favour.
+
+* If you can routinely reuse data and code with ease, you can save a lot of time.
+]
+
+---
+class: middle
+background-image: url("img/reproducibility_8.png")
+background-size: contain
+
+---
+background-image: url("img/money_tree.png")
+background-size: contain
+background-size: 35%
+background-position: 90% 100%
+
+<br>
+<br>
+<br>
+
+## How can we establish practices that increase transparency and reproducibility?
+
+--
+
+<br>
+
+.huge[
+* Data (and code) accessibility
+
+* Documentation
+]
+
+---
+class: middle
+# Data (and code) accessibility
+
+.pull-left[
+.large[**Group exercise**
+
+In your working groups, establish the following and report back:
+
+* Can you access the raw data associated with your study?
+* Can you access the code used to perform the statistical analysis?
+]
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+---
+class: middle
+
+# What to do when you can’t access the data?
+
+.huge[
+* Email the authors? Email the editor?
+
+* Can you extract the data from a PDF?
+  * tabulizer package in R
+  * [*tesseract software*](https://tesseract-ocr.github.io/)
+]
+
+---
+class: middle 
+
+# Reproducibility
+
+.huge[
+Just something to think about for now...  
+
+Is enough information provided for you to reproduce the analysis? &#129300;
+]
+---
+class: middle 
+
+# Guidelines for reproducible computational research
+
+.footnote[[*Sandve et al. 2013. Plos Comp Bio.*](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)]
+
+---
+class: middle
+
+.huge[At an absolute **minimum** you should be able to reproduce the results yourself.]
+
+---
+class: middle
+
+.pull-left[
+## Rule 1: for every result, keep track of how it was produced
+]
+
+.pull-right[
+<br>
+.huge[
+* all parameter choices
+* pre- and post-processing
+* any manual steps
+]
+]
+
+---
+class: middle
+
+.pull-left[
+<br>
+## e.g., include a detailed description of how you measured specimens
+]
+
+.pull-right[
+<img src="img/bryozoans.png" alt="" height="400px", height="auto" />
+]
+
+---
+class: middle
+background-image: url("img/buttons.png")
+background-size: contain
+background-size: 35%
+background-position: 90% 50%
+
+.pull-left[
+## Rule 2: avoid manual data manipulation steps
+]
+
+---
+class: middle
+
+.pull-left[
+## Rule 3: record (or even better archive) the exact versions of all software used
+]
+
+.pull-right[
+<img src="https://media.giphy.com/media/Uv1ocOCpjNRDc3vZse/giphy.gif" alt="" height="300px" />
+]
+
+---
+class: middle 
+
+.pull-left[
+<br>
+## Rule 4: use version control
+]
+
+.pull-right[
+<img src="img/github.png" alt="" height="300px" />
+]
+
+---
+class: middle 
+
+## Rule 5: record all intermediate results and standardise formats
+
+---
+class: middle 
+background-image: url("img/R-logo.png")
+background-size: contain
+background-size: 35%
+background-position: 90% 90%
+
+## Rule 6: for analyses that include randomness, take note of the underlying seeds
+
+---
+class: middle 
+
+.pull-left[
+## Rule 7: always store raw data (and code) used to produce plots
+]
+
+.pull-right[
+.center[
+<img src="https://media.giphy.com/media/CtYFOdVbvTfgZunPEA/giphy.gif" alt="" height="250px" />
+]
+]
+
+---
+class: middle
+
+## Rule 8: connect textual results to underlying results
+
+.footnote[See [*Liow et al. 2019. Evolution*](https://onlinelibrary.wiley.com/doi/full/10.1111/evo.13800) for awesomely commented code &#128526;]
+---
+class: middle 
+background-image: url("img/reproducibility_9.png")
+background-size: contain
+
+---
+class: middle 
+
+.pull-left[
+## Rule 9: provide public access to all scripts and results 
+]
+
+.pull-right[
+.huge[
+* supplementary material
+* code repositories, e.g. github, dryad, zenodo
+]
+]
+
+---
+class: middle
+
+.huge[
+Accept that there is a short-term trade off between maximizing reproducibility and getting results out there, but the long-term benefits are worth the time investment.
+]
+
+---
+class: middle 
+background-image: url("img/reproducibility_10.png")
+background-size: contain
+
+---
+class: middle center
+
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+
+# .black[Time for a break]
+
+
+---
+class: middle
+# Reproducibility workflow
+
+.pull-left[
+.large[**Group exercise**
+
+In your working groups:
+
+* What would a reproducible work flow look like for your study?
+* What are all the necessary steps you would need to record?
+* What will **your** reproducible workflow look like for this project?
+]
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+
+```{r, eval=FALSE, echo=FALSE}
+renderthis::to_pdf("day-02.Rmd", complex_slides = TRUE)
+```
