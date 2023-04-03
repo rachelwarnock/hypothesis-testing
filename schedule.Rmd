@@ -35,6 +35,7 @@ kbl(dt) %>%
 
 Further reading:
 
+* [Slides from today (PDF)](slides/day-01.pdf)
 * [Learning statistics with R: Chapter 1 and Chapter 11](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
 * [tinystats.github.io/teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/)
 
