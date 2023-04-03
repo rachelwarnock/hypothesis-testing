@@ -46,16 +46,19 @@ Further reading:
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("slides/reproducibility.pdf","slides/test-statistics.pdf",NA,NA,NA,NA,NA)
+urls <- c("slides/day-02.html","slides/test-statistics.pdf",NA,NA,NA,NA,NA)
 dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                               "Group exercise: tracking down data",
+                              "Break (15 mins)",
                               "Group exercise: reproducibility workflows",
                               "Lunch break (45 mins)",
-                              "Statistical tests"))
+                              "Statistical tests I",
+                              "Break (15 mins)",
+                              "GitHub (optional)"))
                  
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](",
                          urls[1], ")")
-dt$schedule[5] <- paste0("[", dt$schedule[5], "](", urls[2], ")")
+dt$schedule[6] <- paste0("[", dt$schedule[6], "](", urls[2], ")")
 
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
@@ -65,7 +68,10 @@ kbl(dt) %>%
 
 Further reading:
 
-* [Learning statistics with R: Chapter 1 and Chapter 11](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
+* [A protocol for data exploration to avoid common statistical problems](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/J.2041-210x.2009.00001.X)
+* Reproducible Research in R: [A Tutorial on how to Do the Same Thing More Than Once](https://www.mdpi.com/2624-8611/3/4/53)
+* The Turing Way: [Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+* [Learning statistics with R: Chapter 13 11](https://learningstatisticswithr.com/book/ttest.html)
 
 # Day 3
 

@@ -89,6 +89,7 @@ dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                               "Group exercise: reproducibile workflows", 
                               "Lunch (45 mins)", # 45 mins  13:00
                               "Statistical tests I", #30 minutes
+                              "Break (15 mins)",
                               "Github tutorial (optional)"),
                  start.time = c("10:00", 
                           "", 
@@ -96,7 +97,8 @@ dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                           "", 
                           "12.00",
                           "13:00",
-                          "13:30")) #45 minutes
+                          "",
+                          "14:30")) #45 minutes
 kbl(dt, align=c("l","c")) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
