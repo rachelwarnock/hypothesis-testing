@@ -26,7 +26,7 @@ dt <- data.frame(schedule = c("Course introduction",
                               "(Re)Introduction to the normal distribution")) #45 minutes
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
 dt$schedule[4] <- paste0("[", dt$schedule[4], "](", urls[4], ")")
-#dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
+dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 

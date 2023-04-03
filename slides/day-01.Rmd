@@ -935,6 +935,109 @@ class: middle center
 
 # .black[Time for a break]
 
+---
+class: middle
+background-image: url("giraffe.png")
+background-size: contain
+background-size: 70%
+background-position: right
+
+.pull-left[
+  ## (Re)Introduction to the normal distribution
+  
+  ### And a few other terms
+  
+  ### Day 1 - Part 3
+]
+
+---
+background-image: url("giraffe.png")
+background-size: contain
+background-size: 70%
+background-position: right
+
+<br>
+<br>
+<br>
+  
+.pull-left[
+
+# Objectives
+    
+.large[
+
+* Recap: [*The Normal Distribution*](https://docs.google.com/presentation/d/1y0o0u0tf_LdIphPsfgz55I5Zafbr7GOm1p1XVgLNWs0/edit?usp=sharing)
+      
+* Types of Data
+]
+    
+.footnote[Further reading [*Teacups giraffes and statistics*](https://tinystats.github.io/teacups-giraffes-and-statistics/)]
+  
+]
+
+---
+class: middle
+background-image: url("cont_discrete.png")
+background-size: contain
+background-size: 70%
+background-position: right
+
+.pull-left[
+# Types of data
+  
+]
+
+---
+class: middle
+background-image: url("nom_ord_bin.png")
+background-size: contain
+
+
+---
+class: middle
+# Data
+
+.pull-left[
+.large[**Fourth group exercise**]
+  
+What types of data are used in the tests in your paper?
+    
+Spend 5 minutes putting together the 'Data' slide.
+]
+
+.pull-right[
+  ```{r, echo=FALSE}
+  countdown::countdown(
+    minutes = 5, 
+    seconds = 0, 
+    warn_when = 1, 
+    style = "position: relative; width: min-content; margin: 1em auto;",
+    #color_running_background = "#31b09e",
+    color_warning_background = "#f79334",
+    #color_finished_background = "#b56b6f",
+    #color_finished_text = "#eaeaea"
+  )
+  ```
+]
+
+---
+class: middle inverse
+
+.pull-left[
+
+<br>
+<br>
+
+.center[
+## Questions?
+]
+
+]
+
+
+.pull-right[
+<center><img src="https://mochimochiland.com/wp-content/uploads/cheerupDRAFT1sm.gif" alt="" height="300px" /></center>
+]
 
 ```{r, eval=FALSE, echo=FALSE}
 renderthis::to_pdf("day-01.Rmd", complex_slides = TRUE)
