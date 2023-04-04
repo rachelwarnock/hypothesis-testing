@@ -52,7 +52,7 @@ dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                               "Break (15 mins)",
                               "Group exercise: reproducibility workflows",
                               "Lunch break (45 mins)",
-                              "Statistical tests I",
+                              "Statistical tests I (PDF)",
                               "Break (15 mins)",
                               "GitHub (optional exercise)"))
                  
