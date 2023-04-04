@@ -68,9 +68,10 @@ kbl(dt) %>%
 
 Further reading:
 
+* [Slides from today (PDF)](https://drive.google.com/file/d/1Qr-Lm_OtVKfpMgZeeQb3PBGYS7bUmRc]
 * [A protocol for data exploration to avoid common statistical problems](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/J.2041-210x.2009.00001.X)
-* Reproducible Research in R: [A Tutorial on how to Do the Same Thing More Than Once](https://www.mdpi.com/2624-8611/3/4/53)
-* The Turing Way: [Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+* [Reproducible Research in R: A Tutorial on how to Do the Same Thing More Than Once](https://www.mdpi.com/2624-8611/3/4/53)
+* [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 * [Learning statistics with R: Chapter 13 11](https://learningstatisticswithr.com/book/ttest.html)
 
 # Day 3
