@@ -46,7 +46,7 @@ Further reading:
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c("slides/day-02.html","slides/test-statistics.pdf",NA,NA,NA,NA,NA)
+urls <- c("slides/day-02.html","slides/test-statistics.pdf","https://docs.google.com/presentation/d/11PysN1wftVU4Yx5OJAcMyt2ziSnFfFGw/",NA,NA,NA,NA)
 dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                               "Group exercise: tracking down data",
                               "Break (15 mins)",
@@ -54,11 +54,12 @@ dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
                               "Lunch break (45 mins)",
                               "Statistical tests I",
                               "Break (15 mins)",
-                              "GitHub (optional)"))
+                              "GitHub (optional exercise)"))
                  
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](",
                          urls[1], ")")
 dt$schedule[6] <- paste0("[", dt$schedule[6], "](", urls[2], ")")
+dt$schedule[8] <- paste0("[", dt$schedule[8], "](", urls[3], ")")
 
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
