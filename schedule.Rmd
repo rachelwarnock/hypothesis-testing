@@ -83,7 +83,7 @@ urls <- c("slides/day-03.html",NA,"slides/test-statistics2.pdf",NA,NA,NA,NA,NA)
 dt <- data.frame(schedule = c("Intro to artificial intelligence",
                               "Group exercise: using AI to support you",
                               "Lunch break (60 mins)",
-                              "Statistical tests II",
+                              "Statistical tests II (pdf)",
                               "Work on presentation"))
                  
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
