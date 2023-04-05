@@ -1,0 +1,377 @@
+---
+title: "Artificial Intelligence"
+author:
+  - "Rachel Warnock"
+date: "05.04.2023"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+    seal: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+#library(xaringanExtra)
+#xaringanExtra::use_panelset()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#FF3C38", #headers
+  secondary_color = "#006C67", #bold inline #011936
+  inverse_header_color = "#FFB100", #FFFFFF
+  colors = c(red = "#FF3C38",
+           grey = "#003844",
+           blue = "#1F85DE"),
+  #text_font_size = "1.1rem"
+)
+```
+
+class: title-slide center middle
+background-image: url("img/hands.png")
+background-position: right
+background-size: contain
+background-color: white
+
+.pull-left[
+# .red[`r rmarkdown::metadata$title`]
+
+### .red[`r rmarkdown::metadata$author`]
+### .red[plus a few robot friends]
+
+### .red[`r rmarkdown::metadata$date`]
+]
+
+---
+
+# Today
+
+<br>
+
+```{css, echo=F}
+    /* Table width = 100% max-width */
+
+    .remark-slide table{
+        width: 100%;
+    }
+
+    /* Change the background color to white for shaded rows (even rows) */
+
+    .remark-slide thead, .remark-slide tr:nth-child(2n) {
+        background-color: white;
+    }
+    
+    
+```
+
+```{css, echo=F}
+   .large { font-size: 120% }
+   .huge { font-size: 160% }
+```
+
+
+.pull-left[
+```{r schedule, echo = FALSE}
+library(kableExtra)
+dt <- data.frame(schedule = c("Intro to artificial intelligence tools",
+                              "Group exercise: using AI to support you", #30-45 mins
+                              "Lunch (45 mins)", # 45 mins  13:00
+                              "Statistical tests II", #30 minutes
+                              "Break (15 mins)",
+                              "Work on presentations"),
+                 start.time = c("11:00", 
+                          "", 
+                          "", 
+                          "12.30",
+                          "13:30",
+                          "")) #45 minutes
+kbl(dt, align=c("l","c")) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+
+# Slides
+```
+.footnote[Times are approximate.]
+]
+
+.pull-right[
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+]
+
+---
+background-image: url("img/bender.jpg")
+background-size: contain
+background-size: 15%
+background-position: 95% 10%
+
+<br>
+<br>
+<br>
+<br>
+
+
+# What is Artificial Intelligence?
+
+.large[
+* The simulation of human intelligence.
+]
+
+--
+
+.large[
+* The ability of machines to perform tasks that typically require human intelligence, e.g., learning, problem-solving, and decision-making.
+]
+
+--
+
+.large[
+* AI technologies include machine learning, natural language processing, and computer vision.
+]
+
+---
+background-image: url("https://feedzai.com/aptopees/2020/11/traditional-computing-process-feedzai-min.png")
+background-size: contain
+background-size: 75%
+
+---
+background-image: url("https://feedzai.com/aptopees/2020/11/machine-learning-training-process-feedzai-min.png")
+background-size: contain
+background-size: 75%
+
+
+.center[
+.footnote[
+[*The two phases of Machine Learning*](https://feedzai.com/blog/how-machine-learning-works/)
+]
+]
+
+---
+background-image: url("https://feedzai.com/aptopees/2020/11/machine-learning-scoring-process-feedzai-min.png")
+background-size: contain
+background-size: 75%
+
+.center[
+.footnote[
+[*The two phases of Machine Learning*](https://feedzai.com/blog/how-machine-learning-works/)
+]
+]
+
+---
+background-image: url("img/Nuss-tweet.png")
+background-size: contain
+background-size: 35%
+background-position: 90% 50%
+
+# Example
+
+.pull-left[
+.large[
+An AI app to generate paper titles based on the title of papers published in the journal Nature between 2015 - 2020. 
+]
+
+.large[
+[*Find the app here!*](https://cnidaria.nat.uni-erlangen.de/shiny/users/nussaibah/generator/)
+]
+
+.large[
+The app was written by [*Nussaïbah Raja*](https://nussaibahrs.github.io) professional data scientist and PhD student at Pal FAU. She also uses machine learning to predict extinction risk.
+]
+]
+
+---
+class: middle
+
+# Artificial Intelligence tools
+
+.large[
+* AI is already widely used in everyday life, industry and research (inc. paleobio).
+]
+
+.large[
+* Designed to analyze large amounts of data, recognize patterns, and make predictions (or decisions) based on that data.
+]
+
+---
+background-image: url("https://togetherdigital.imgix.net/96206/1198x1198/15483ac2d5/ucdpa-chatgpt-img-1.png?q=60&w=900&lossless=1&auto=format&ixlib=js-1.1.1&s=7fd959848edb31cfa8b91c0030d154b7")
+background-size: contain
+
+---
+background-image: url("https://miro.medium.com/v2/resize:fit:1142/format:webp/1*bRAm5gHJKsW1Jq7JOoIV4Q.png")
+background-size: contain
+background-size: 40%
+background-position: 90% 50%
+
+# openAI ChatGTP
+
+.pull-left[
+.large[
+ChatGPT belongs to a class of machine learning Natural Language Processing models.
+
+Digests huge quantities of text data and infer relationships between words. Used to predict a word within a sequence.
+
+The model is filling in the blank with the most statistically probable word given the surrounding context.
+]
+]
+
+--
+
+
+.footnote[
+Quick video: [*What can you do with GPT-4?*](https://www.youtube.com/watch?v=oc6RV5c1yd0)]
+]
+
+.pull-right[
+.pull-right[
+.footnote[
+Learn more: [*How ChatGPT works*](https://towardsdatascience.com/how-chatgpt-works-the-models-behind-the-bot-1ce5fca96286)
+]
+]
+]
+
+
+
+
+
+
+
+```{r, eval=FALSE, echo=FALSE}
+# https://www.youtube.com/watch?v=--khbXchTeE
+}
+```
+
+---
+background-image: url("https://openaicom.imgix.net/cf717bdb-0c8c-428a-b82b-3c3add87a600/ChatGPT_Diagram.svg?fm=auto&auto=compress,format&fit=min&w=1919&h=1138")
+background-size: contain
+
+---
+class: middle center
+
+# Demo
+
+---
+class: middle
+# ChatGTP
+
+.pull-left[
+.large[**Group exercise**
+
+In your working groups, access chatGTP and have some fun!
+
+Some suggestions: write a poem / song / blog about some subject.
+]
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+
+---
+class: middle
+
+# Can I use aritficial intelligence for my research?
+
+--
+
+.large[
+Absolutely!
+
+* statistics - [*ChatGPT for Data Analysts*](https://www.youtube.com/watch?v=C75TROiiEa0)
+* coding - [*How to learn to code using ChatGPT*](https://www.youtube.com/watch?v=VznoKyh6AXs)
+* writing
+* summarising
+]
+
+---
+class: middle
+
+# Another demo
+
+---
+class: middle
+
+# Be careful!
+
+
+---
+class: middle
+
+.pull-left[
+.huge[
+*"The train has left the train station and is going at 150 miles per hour. You are not going to stop it."* 
+]
+
+.large[ [**Ayanna Howard**, *The Economist: Beyond ChatGPT: what chatbots mean for the future*](https://www.youtube.com/watch?v=dctcfxw13AQ) ]
+]
+
+.pull.right[
+<img src="https://media.giphy.com/media/3oz8xtBx06mcZWoNJm/giphy.gif" alt="" height="300px" /></center>
+]
+---
+class: middle
+# Refine your knowledge
+
+.pull-left[
+.large[**Group exercise**
+
+Switch working groups, and refine your understanding of the following terms:
+
+* Statistical hypotheses (null and alterantive)
+* Interpreting p-values
+* Test statistics
+]
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+---
+class: middle center
+
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+
+# .black[Time for a break]
+
+
+```{r, eval=FALSE, echo=FALSE}
+renderthis::to_pdf("day-03.Rmd", complex_slides = TRUE)
+```

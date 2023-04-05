@@ -79,13 +79,14 @@ Further reading:
 
 ```{r, echo = FALSE}
 library(kableExtra)
-urls <- c(NA,NA,"slides/test-statistics2.pdf",NA,NA,NA,NA,NA)
-dt <- data.frame(schedule = c("Intro to chatGTP",
-                              "Group exercise: identifying tests",
-                              "Statistical tests II",
+urls <- c("slides/day-03.html",NA,"slides/test-statistics2.pdf",NA,NA,NA,NA,NA)
+dt <- data.frame(schedule = c("Intro to artificial intelligence",
+                              "Group exercise: using AI to support you",
                               "Lunch break (60 mins)",
+                              "Statistical tests II",
                               "Work on presentation"))
                  
+dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
 dt$schedule[3] <- paste0("[", dt$schedule[3], "](", urls[3], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
@@ -95,6 +96,7 @@ kbl(dt) %>%
 
 Further reading:
 
+* [Slides from today (PDF)](https://drive.google.com/file/d/1-3gBAwqOSg2uqGcfB-mgne14LLly_KxN/view?usp=share_link)
 * [How to perform tukey HSD test in R](https://www.r-bloggers.com/2021/08/how-to-perform-tukey-hsd-test-in-r/)
 * [Learning statistics with R: Chapter 13 and Chapter 14](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
 
