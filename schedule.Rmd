@@ -83,11 +83,11 @@ urls <- c("slides/day-03.html",NA,"slides/test-statistics2.pdf",NA,NA,NA,NA,NA)
 dt <- data.frame(schedule = c("Intro to artificial intelligence",
                               "Group exercise: using AI to support you",
                               "Lunch break (60 mins)",
-                              "Statistical tests II (pdf)",
+                              "Statistical tests II (PDF)",
                               "Work on presentation"))
                  
 dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
-dt$schedule[3] <- paste0("[", dt$schedule[3], "](", urls[3], ")")
+dt$schedule[4] <- paste0("[", dt$schedule[4], "](", urls[3], ")")
 kbl(dt) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
