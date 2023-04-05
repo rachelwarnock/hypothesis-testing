@@ -98,7 +98,6 @@ Further reading:
 
 * [Slides from today (PDF)](https://drive.google.com/file/d/1-3gBAwqOSg2uqGcfB-mgne14LLly_KxN/view?usp=share_link)
 * [How to perform tukey HSD test in R](https://www.r-bloggers.com/2021/08/how-to-perform-tukey-hsd-test-in-r/)
-* [Learning statistics with R: Chapter 13 and Chapter 14](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
 
 # Day 4
 
