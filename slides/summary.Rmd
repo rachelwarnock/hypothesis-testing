@@ -1,8 +1,8 @@
 ---
-title: "Hypothesis testing summary"
+title: "Hypothesis testing course summary"
 author: 
   - "Rachel Warnock"
-date: "25.02.2022"
+date: "06.04.2023"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -35,16 +35,18 @@ knitr::opts_chunk$set(
 library(xaringanthemer)
 style_duo_accent(
   primary_color = "#FF3C38", #headers
-  secondary_color = "#011936", #bold inline
-  inverse_header_color = "#FFFFFF",
+  secondary_color = "#006C67", #bold inline #011936
+  inverse_header_color = "#FFB100", #FFFFFF
   colors = c(red = "#FF3C38",
-           grey = "#465362"),
+           grey = "#003844",
+           blue = "#1F85DE",
+           yellow = "#FFB100"),
   #text_font_size = "1.1rem"
 )
 ```
 
 class: title-slide center middle
-background-image: url("hands.png")
+background-image: url("img/hands.png")
 background-position: right
 background-size: contain
 background-color: white
@@ -69,7 +71,7 @@ class: middle
    .large { font-size: 130% }
 ```
 
-# Reproducibility in other fields
+# Reproducibility in cancer biology
 
 .large[Aim: replicate (and reproduce) 193 experiments from 53 high-impact papers.]
 
@@ -80,8 +82,8 @@ experiments from 23 papers.]
 
 * **None** of the 193 experiments
 were described in sufficient detail in the original paper to repeat the experiment.
-* key descriptive details necessary for statistics available for only 4 of 193 experiments.
-* despite contacting the authors, they were missing data for 68% of experiments.]
+* Key descriptive details necessary for statistics available for only 4 of 193 experiments.
+* Despite contacting the authors, they were missing data for 68% of experiments.]
 
 
 .footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
@@ -89,7 +91,7 @@ were described in sufficient detail in the original paper to repeat the experime
 ---
 class: middle 
 
-# Reproducibility in other fields
+# Reproducibility in cancer biology
 
 .large[Authors were extremely or very helpful for 41% of experiments, minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments.]
 
@@ -105,17 +107,15 @@ background-image: url("barriers.png")
 
 .pull-left[
 .large["*It is hard to assess whether reported findings are credible.*"]
+.pull-left[
 .footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
 ]
-
-
+]
 
 ---
 class: middle
 
-# Research design
-
-.large[A **hypothesis testing framework** can help guide your entire project design *objectively*, including choice of data and statistical tests.]
+# What will *you* do to ensure your research is reproducibile?
 
 ---
 class: middle
@@ -124,27 +124,81 @@ background-position: left
 background-image: url("at-first.png")
 
 .pull-right[
-# Reproducibility
+# Reproducibility in R
 
 .large[R and R Markdown (or other tools for organising code and notes) can help:
-* keeping track progress
+* keeping track of progress
 * sharing progress (during & after your project)
-* enable reproducibility]
+* enable reproducibility
+]
 ]
 
 ---
 class: middle
 
-# Thank you!
+# Research design
+
+.large[A **hypothesis testing framework** can help guide your project design *objectively*, including choice of data, sampling approach and statistical tests.]
+
+--
+
+.large[You do not need remember the details of statistical tests! You only need to know where to look for them. Take advantage of available tools!]
 
 ---
-class: middle
+class: middle inverse
 background-size: contain
-background-position: right
-background-image: url("https://media.giphy.com/media/hTUyx24ANT0h16iTE0/giphy.gif")
+background-position: left
+background-image: url("img/team_effort.jpg")
 
-.pull-left[# That's a wrap!]
+.center[
+.pull-right[
+
+## When in doubt, ask your peers!
+
+]
+]
 
 
+```{r, echo=FALSE, eval=FALSE}
+# ---
+#class: middle
+#background-size: contain
+#background-position: right
+#background-image: url("https://media.giphy.com/media/hTUyx24ANT0h16iTE0/giphy.gif")
+
+#.pull-left[# That's a wrap!]
+```
+
+
+
+
+---
+class: middle inverse
+
+.center[
+.pull-left[
+
+## Thank you!
+
+### Fill out the [.red[course feedback form]](https://forms.gle/9EePRYnJSHipNc1V8)
+]
+]
+
+
+
+.pull-right[
+<center><img src="https://mochimochiland.com/wp-content/uploads/cheerupDRAFT1sm.gif" alt="" height="300px" /></center>
+]
+
+
+```{r, echo=FALSE, eval=FALSE}
+# ---
+#class: middle
+#background-size: contain
+#background-position: right
+#background-image: url("https://media.giphy.com/media/hTUyx24ANT0h16iTE0/giphy.gif")
+
+#.pull-left[# That's a wrap!]
+```
 
 

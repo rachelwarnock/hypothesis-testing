@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Hypothesis testing summary</title>
+    <title>Hypothesis testing course summary</title>
     <meta charset="utf-8" />
     <meta name="author" content="Rachel Warnock" />
     <script src="summary_files/header-attrs/header-attrs.js"></script>
@@ -16,17 +16,17 @@
 
 
 class: title-slide center middle
-background-image: url("hands.png")
+background-image: url("img/hands.png")
 background-position: right
 background-size: contain
 background-color: white
 
 .pull-left[
-# .red[Hypothesis testing summary]
+# .red[Hypothesis testing course summary]
 
 ### .red[Rachel Warnock]
 
-### .red[25.02.2022]
+### .red[06.04.2023]
 ]
 
 ---
@@ -41,7 +41,7 @@ class: middle
    .large { font-size: 130% }
 &lt;/style&gt;
 
-# Reproducibility in other fields
+# Reproducibility in cancer biology
 
 .large[Aim: replicate (and reproduce) 193 experiments from 53 high-impact papers.]
 
@@ -52,8 +52,8 @@ experiments from 23 papers.]
 
 * **None** of the 193 experiments
 were described in sufficient detail in the original paper to repeat the experiment.
-* key descriptive details necessary for statistics available for only 4 of 193 experiments.
-* despite contacting the authors, they were missing data for 68% of experiments.]
+* Key descriptive details necessary for statistics available for only 4 of 193 experiments.
+* Despite contacting the authors, they were missing data for 68% of experiments.]
 
 
 .footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
@@ -61,7 +61,7 @@ were described in sufficient detail in the original paper to repeat the experime
 ---
 class: middle 
 
-# Reproducibility in other fields
+# Reproducibility in cancer biology
 
 .large[Authors were extremely or very helpful for 41% of experiments, minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments.]
 
@@ -77,17 +77,15 @@ background-image: url("barriers.png")
 
 .pull-left[
 .large["*It is hard to assess whether reported findings are credible.*"]
+.pull-left[
 .footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
 ]
-
-
+]
 
 ---
 class: middle
 
-# Research design
-
-.large[A **hypothesis testing framework** can help guide your entire project design *objectively*, including choice of data and statistical tests.]
+# What will *you* do to ensure your research is reproducibile?
 
 ---
 class: middle
@@ -96,26 +94,64 @@ background-position: left
 background-image: url("at-first.png")
 
 .pull-right[
-# Reproducibility
+# Reproducibility in R
 
 .large[R and R Markdown (or other tools for organising code and notes) can help:
-* keeping track progress
+* keeping track of progress
 * sharing progress (during &amp; after your project)
-* enable reproducibility]
+* enable reproducibility
+]
 ]
 
 ---
 class: middle
 
-# Thank you!
+# Research design
+
+.large[A **hypothesis testing framework** can help guide your project design *objectively*, including choice of data, sampling approach and statistical tests.]
+
+--
+
+.large[You do not need remember the details of statistical tests! You only need to know where to look for them. Take advantage of available tools!]
 
 ---
-class: middle
+class: middle inverse
 background-size: contain
-background-position: right
-background-image: url("https://media.giphy.com/media/hTUyx24ANT0h16iTE0/giphy.gif")
+background-position: left
+background-image: url("img/team_effort.jpg")
 
-.pull-left[# That's a wrap!]
+.center[
+.pull-right[
+
+## When in doubt, ask your peers!
+
+]
+]
+
+
+
+
+
+
+
+---
+class: middle inverse
+
+.center[
+.pull-left[
+
+## Thank you!
+
+### Fill out the [.red[course feedback form]](https://forms.gle/9EePRYnJSHipNc1V8)
+]
+]
+
+
+
+.pull-right[
+&lt;center&gt;&lt;img src="https://mochimochiland.com/wp-content/uploads/cheerupDRAFT1sm.gif" alt="" height="300px" /&gt;&lt;/center&gt;
+]
+
 
 
 
@@ -169,6 +205,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
