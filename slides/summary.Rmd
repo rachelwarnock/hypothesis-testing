@@ -191,6 +191,31 @@ class: middle inverse
 ]
 
 
+---
+class: middle center
+
+In paleobiology we delve,<br>
+To learn about the creatures that once swelled,<br>
+But when we add statistics to the mix,<br>
+Our students' frustration reaches its peak.
+
+They count and measure and analyze,<br>
+But the data just confounds their eyes,<br>
+They long for fossils and ancient bones,<br>
+Not p-values and confidence zones.
+
+But fear not, dear students, don't despair,<br>
+Statistics is a tool that's fair,<br>
+It helps us find the truth we seek,<br>
+And in the end, the answers speak.
+
+So buckle down and crunch those numbers,<br>
+And soon you'll find your knowledge lumbers,<br>
+For in the intersection of these two fields,<br>
+Lies the secrets that evolution yields.
+
+*A poem by ChatGTP*
+
 ```{r, echo=FALSE, eval=FALSE}
 # ---
 #class: middle
