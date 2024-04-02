@@ -10,11 +10,11 @@ knitr::include_graphics("hands.png")
 
 # Course description
 
-This course will take place **3-6 April 10:00-16:00** in person at Henke Str.
-We will finish at 16:00 at the *latest* each day and there will be plenty of breaks.
-
-This course focuses on **hypothesis testing** and **reproducibility** in science. 
+This course focuses on statistical **hypothesis testing** and **reproducibility** in science. 
 You will learn how develop and test your own hypotheses, perform basic statistical tests and apply this knowledge to reproduce (and potentially improve) published results. There will be a combination of lectures and group exercises. 
+
+The main part of this course will take place **10-12 April 10:00-17:00** in person at Henke Str.
+We will finish at 17:00 at the *latest* each day and there will be plenty of breaks.
 
 Each student is assigned to a working [group](groups.html) and each group is assigned a published scientific paper.
 
@@ -22,17 +22,23 @@ Each student is assigned to a working [group](groups.html) and each group is ass
 
 # Before the course
 
-Read the paper assigned to your working group and recap [the normal distribution](https://tinystats.github.io/teacups-giraffes-and-statistics/02_bellCurve.html). 
+1. Read the paper assigned to your working group.
+2. Complete the [Teacup Giraffe](https://tinystats.github.io/teacups-giraffes-and-statistics/) exercises, 1 through 6. 
+3. Read up on different types of [statistical variables](https://www.scribbr.com/methodology/types-of-variables/). Pay special attention to the following terms:
+    * quantitative & categorical variables
+    * discrete & continuous variables
+    * binary, nominal, & ordinal variables
+    * independent & dependent variables
 
 \
 
 # Course evaluation
 
 The goal is to reproduce the results of a published scientific article.
-On the last day of the course each group will present their findings.
+Each group will present their findings on a date to be decided together.
 You can use this [Google Slides Template](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) and these [guidelines](https://docs.google.com/spreadsheets/d/1tfh-HZc3YM1HHnoTtw9s0O3vqZ89nuhaYFtsMmeCCQw/edit?usp=sharing) to prepare your presentation.
 
-Note this course is graded together with Laboratory methods in palaeontology.
+Note this course is graded together with Laboratory Methods in Palaeontology.
 
 \
 

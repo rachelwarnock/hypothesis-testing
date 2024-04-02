@@ -9,17 +9,17 @@ output: html_document
 knitr::include_graphics("groups.png")
 ```
 
-
 # Group 1
 
-[Isotopic and anatomical evidence of an herbivorous diet
-in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/24563098/)
+[Statistical analysis of iron geochemical data suggests
+limited late Proterozoic oxygenation](https://www.nature.com/articles/nature14589)
 
-* Lars
-* Nida
-* Toshiro
+* Alissa
+* Jordan
+* Katie
+* Meghan
 
-➤ **[Link to Group 1 PDF](https://drive.google.com/file/d/1ULnEQUJ3Jcqnf3JUoEo9vkguwA9i2yx2/view?usp=sharing)**
+➤ **[Link to Group 1 PDF](https://drive.google.com/file/d/1duo58nAXslIEuhMJ923kM8hanXazLp3G/view?usp=share_link)**
 
 \
 
@@ -27,9 +27,26 @@ in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/2456
 
 [High coral diversity is coupled with reef-building capacity during the Late Oligocene warming](https://riviste.unimi.it/index.php/RIPS/article/view/16332)
 
-* Bastian
-* Taeya
+* Christian
+* Gabriella
+* Sophie
+* Victoria
+
+➤ **[Link to Group 2 PDF](https://drive.google.com/file/d/1Ca1WG7dEHW7eiGX_rDj02EXx6Ro_58yg/view?usp=share_link)**
+
+\
+
+# Group 3
+
+[Isotopic and anatomical evidence of an herbivorous diet
+in the Early Tertiary giant bird Gastornis](https://pubmed.ncbi.nlm.nih.gov/24563098/)
+
+* Lars
+* Matias
+* Max
+* Pia
+* Steffen
   
-➤ **[Link to Group 2 PDF](https://drive.google.com/file/d/1Ca1WG7dEHW7eiGX_rDj02EXx6Ro_58yg/view?usp=sharing)**
+➤ **[Link to Group 3 PDF](https://drive.google.com/file/d/1ULnEQUJ3Jcqnf3JUoEo9vkguwA9i2yx2/view?usp=share_link)**
 
 

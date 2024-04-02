@@ -14,122 +14,21 @@ Course material will be updated here throughout the week.
 
 # Day 1
 
-```{r, echo = FALSE}
-library(kableExtra)
-urls <- c("slides/day-01.html",NA,NA,"slides/day-01.html#27",NA,NA,"slides/day-01.html#72", NA)
-dt <- data.frame(schedule = c("Course introduction",
-                              "Group exercise: mini reading group", #30-45 mins
-                              "Break (15 mins)", #15 mins 11:00
-                              "Introduction to hypothesis testing", #45 min lecture 12:00
-                              "Lunch (45 mins)", # 45 mins  13:00
-                              "Group exercise: defining hypotheses", #30 minutes
-                              "(Re)Introduction to the normal distribution",
-                              "Group exercise: identify the data")) #45 minutes
-dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
-dt$schedule[4] <- paste0("[", dt$schedule[4], "](", urls[4], ")")
-dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[7], ")")
-kbl(dt) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
-
-# Slides
-```
-
-Further reading:
-
-* [Slides from today (PDF)](https://drive.google.com/file/d/1_-8-jZbND2gAx1kS0VJ3iAQO1qowFXAk)
-* [Learning statistics with R: Chapters 1 and Chapter 11](https://learningstatisticswithr.com/book/why-do-we-learn-statistics.html)
-* [tinystats.github.io/teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/)
-
-
+* Course introduction 
+* Introduction to hypothesis testing
 
 # Day 2
 
-```{r, echo = FALSE}
-library(kableExtra)
-urls <- c("slides/day-02.html","slides/test-statistics.pdf","https://docs.google.com/presentation/d/11PysN1wftVU4Yx5OJAcMyt2ziSnFfFGw/",NA,NA,NA,NA)
-dt <- data.frame(schedule = c("Intro to reproducibility and data accessibility",
-                              "Group exercise: tracking down data",
-                              "Break (15 mins)",
-                              "Group exercise: reproducibility workflows",
-                              "Lunch break (45 mins)",
-                              "Statistical tests I (PDF)",
-                              "Break (15 mins)",
-                              "GitHub (optional exercise)"))
-                 
-dt$schedule[1] <- paste0("[", dt$schedule[1], "](",
-                         urls[1], ")")
-dt$schedule[6] <- paste0("[", dt$schedule[6], "](", urls[2], ")")
-dt$schedule[8] <- paste0("[", dt$schedule[8], "](", urls[3], ")")
-
-kbl(dt) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
-
-# Slides
-```
-
-Further reading:
-
-* [Slides from today (PDF)](https://drive.google.com/file/d/1Qr-Lm_OtVKfpMgZeeQb3PBGYS7bUmRc)
-* [A protocol for data exploration to avoid common statistical problems](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/J.2041-210x.2009.00001.X)
-* [Reproducible Research in R: A Tutorial on how to Do the Same Thing More Than Once](https://www.mdpi.com/2624-8611/3/4/53)
-* [The Turing Way: Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
-* British Ecological Society Guides 
-  * [Reproducible Research](
-https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf) 
-  * [Data management](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Data-Management-2019.pdf?utm_source=web&utm_medium=web&utm_campaign=better_science)
-* [Learning statistics with R: Chapters 13 & 14](https://learningstatisticswithr.com/book/ttest.html)
+* Intro to reproducibility and data accessibility
+* Github
+* Statistical tests I (parametric tests)
 
 # Day 3
 
-```{r, echo = FALSE}
-library(kableExtra)
-urls <- c("slides/day-03.html",NA,"slides/test-statistics2.pdf",NA,NA,NA,NA,NA)
-dt <- data.frame(schedule = c("Intro to artificial intelligence",
-                              "Group exercise: using AI to support you",
-                              "Lunch break (60 mins)",
-                              "Statistical tests II (PDF)",
-                              "Work on presentation"))
-                 
-dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
-dt$schedule[4] <- paste0("[", dt$schedule[4], "](", urls[3], ")")
-kbl(dt) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
-
-# Slides
-```
-
-Further reading:
-
-* [Slides from today (PDF)](https://drive.google.com/file/d/1-3gBAwqOSg2uqGcfB-mgne14LLly_KxN/view?usp=share_link)
-* [How to perform tukey HSD test in R](https://www.r-bloggers.com/2021/08/how-to-perform-tukey-hsd-test-in-r/)
+* Statistical tests II (non-parametric tests)
 
 # Day 4
 
-```{r, echo = FALSE}
-library(kableExtra)
-urls <- c("","https://www.dominos.de/speisekarte","slides/summary.html",NA,NA,NA,NA)
-dt <- data.frame(schedule = c("Work on presentations",
-                              "Lunch break (60 mins)",
-                              "Presentation 1 (14:00)",
-                              "Presentation 2 (14:30)",
-                              #"Presentation 3 (14:30)",
-                              "Summary"
-                              )) #"Pizza!"
-                 
-#dt$schedule[1] <- paste0("[", dt$schedule[1], "](", urls[1], ")")
-dt$schedule[5] <- paste0("[", dt$schedule[5], "](", urls[3], ")")
-#dt$schedule[7] <- paste0("[", dt$schedule[7], "](", urls[2], ")")
-kbl(dt) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+* Presentations (date to be decided)
 
-# Slides
-```
 
-Complete the [**Course feedback form**](https://forms.gle/9EePRYnJSHipNc1V8).
-
-Further reading:
-
-* [Why the P Value Is Not Enough](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/)
-* [Rewriting results sections in the language of evidence](https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(21)00284-6)
-* [Rewriting results in the language of compatibility](https://www.sciencedirect.com/science/article/abs/pii/S0169534722000246?dgcid=author)
-* [What should the title of your next paper be?]( https://cnidaria.nat.uni-erlangen.de/shiny/users/nussaibah/generator/)
