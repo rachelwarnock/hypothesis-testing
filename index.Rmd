@@ -22,8 +22,8 @@ Each student is assigned to a working [group](groups.html) and each group is ass
 
 # Before the course
 
-1. Read the paper assigned to your working group.
-2. Complete the [Teacup Giraffe](https://tinystats.github.io/teacups-giraffes-and-statistics/) exercises, 1 through 6. 
+1. **Read the paper assigned to your working group**
+2. Complete the [Teacup Giraffe](https://tinystats.github.io/teacups-giraffes-and-statistics/) exercises, 1 through 6 
 3. Read up on different types of [statistical variables](https://www.scribbr.com/methodology/types-of-variables/). Pay special attention to the following terms:
     * quantitative & categorical variables
     * discrete & continuous variables
