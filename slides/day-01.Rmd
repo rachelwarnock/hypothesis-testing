@@ -911,7 +911,7 @@ class: middle center
 
 <center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
 
-# .black[Time for a break?]
+# .black[Time for a break]
 
 ---
 name: significance

@@ -17,12 +17,12 @@ Course material will be updated here throughout the week.
 * [Course introduction](slides/day-01.html)
 * [Introduction to hypothesis testing](slides/day-01.html#hypothesis)
 * [Significance and p-values](slides/day-01.html#significance)
+* [Statistical tests I (parametric tests)](slides/test-statistics.pdf)
 
 # Day 2
 
 * Intro to reproducibility and data accessibility
 * Github
-* Statistical tests I (parametric tests)
 
 # Day 3
 
