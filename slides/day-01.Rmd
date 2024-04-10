@@ -893,9 +893,9 @@ Do you agree with the authors? Are there more than one?
 .pull-right[
 ```{r, echo=FALSE}
 countdown::countdown(
-  minutes = 10, 
+  minutes = 15, 
   seconds = 0, 
-  warn_when = 8, 
+  warn_when = 12, 
   style = "position: relative; width: min-content; margin: 1em auto;",
   #color_running_background = "#31b09e",
   color_warning_background = "#f79334",
@@ -905,6 +905,13 @@ countdown::countdown(
 #If your paper includes more than one, just pick one.
 ```
 ]
+
+---
+class: middle center
+
+<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+
+# .black[Time for a break?]
 
 ---
 
