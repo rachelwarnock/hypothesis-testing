@@ -16,6 +16,7 @@ Course material will be updated here throughout the week.
 
 * [Course introduction](slides/day-01.html)
 * [Introduction to hypothesis testing](slides/day-01.html#hypothesis)
+* [Significance and p-values](slides/day-01.html#significance)
 
 # Day 2
 

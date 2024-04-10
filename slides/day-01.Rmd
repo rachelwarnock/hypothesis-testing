@@ -90,9 +90,9 @@ dt <- data.frame(schedule = c( # variables quiz
                               "Group exercise: mini reading group", #20 mins
                               "Break",
                               "Introduction to hypothesis testing", #45 min lecture 12:00
-                              "Lunch (1 hr)", # 45 mins  13:00
                               "Group exercise: defining hypotheses", #30 minutes
-                              "(Re)Introduction to the normal distribution"),
+                              "Lunch (1 hr)", # 45 mins  13:00
+                              "P-values"),
                  start.time = c("10:00", 
                           "", 
                           "", 
@@ -914,7 +914,7 @@ class: middle center
 # .black[Time for a break?]
 
 ---
-
+name: significance
 <br>
 <br>
 <br>
@@ -1106,8 +1106,13 @@ After we run the test, one of four things might have happened:
 
 .large[
 If we reject a null hypothesis that is actually true, then we have a **type I error**.
+]
 
-If we retain the null hypothesis that is actually false, then we have a **type II error**.]
+--
+
+.large[
+If we retain the null hypothesis that is actually false, then we have a **type II error**.
+]
 
 --
 
