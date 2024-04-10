@@ -457,6 +457,8 @@ background-position: right
 
 ```{r, echo=FALSE}
 # A central tool in science since the 1600s
+# 1609 Galileo looked at the Moon using a telescope
+# Was the first to deduce the cause of the uneven waning of light was from lunar mountains and craters
 ```
 ---
 class: middle
@@ -524,18 +526,19 @@ Forces us to design tests in advance of seeing the data, rather than explaining 
 # Example
 
 .large[
-**Research question** $-$ What is the impact of continental configuration on extinction?]
+**Research question** $-$ What is the impact of continental configuration on extinction risk?]
 
 .large[
 **Research hypothesis** $-$ Extinction intensity during the Ordovician will be higher than the Cenozoic because less species are able to disperse along continental margins.]
 
 ---
-class: middle
+class: bottom
 background-image: url("img/continents.png")
-background-size: contain
+background-size: 85%
 background-position: center
 
-.footnote[[(Saupe et al. 2019](https://www.nature.com/articles/s41561-019-0504-6)]
+
+.small[[Saupe et al. 2019](https://www.nature.com/articles/s41561-019-0504-6)]
 
 ---
 <br>
@@ -548,8 +551,15 @@ background-position: center
 **Research question** $-$ How does body size affect diversification potential among mammals following the K-Pg extinction?]
 
 .large[
-**Research hypothesis** $-$ Large mammals will undergo more diversification relative to other body size categories via expansion into larger body size niches previously occupied by dinosaurs (the dinosaur incumbency hypothesis).]
+**Research hypothesis** $-$ Large mammals will undergo more diversification relative to other body size categories through expansion into larger body size niches previously occupied by dinosaurs (the dinosaur incumbency hypothesis).]
 
+
+```{css, echo=F}
+
+.my-style {
+  font-size: .7em;
+}
+```
 ---
 class: bottom
 background-image: url("img/mammals.jpg")
@@ -562,6 +572,7 @@ background-position: center
 <br>
 
 [Benevento et al. 2023](https://onlinelibrary.wiley.com/doi/full/10.1111/pala.12653)
+.my-style[A, total Mammalia; B, Multituberculata; C, Metatheria; D, Eutheria.]
 
 
 ---
@@ -595,7 +606,7 @@ knitr::include_graphics("img/fossil.png")
 
 ## Examples of statements that are **not** research hypotheses
 
-.large[**There is life on other planets**] $-$ .large[this is a reasonable assumption to make, but there is no feasible way of testing this claim.]
+.large[**There is life on other planets**] $-$ .large[this is a reasonable assumption to make, but there is no feasible way to test this claim.]
 
 --
 
@@ -616,15 +627,15 @@ knitr::include_graphics("img/fossil.png")
 
 ## Research vs. statistical hypotheses
 
-.large[Sometimes research hypotheses can be a bit fuzzy, but ultimately research hypotheses are scientific claims.]
-
---
-
-.large[In contrast, a **statistical hypothesis** is a predicted pattern in the data that should occur if the research hypothesis is true.]
+.large[A research hypotheses can be a bit fuzzy, but ultimately research hypotheses are scientific claims.]
 
 --
 
 .large[A statistical hypothesis must be **mathematically precise** and correspond to specific claims about parameters that can be used to generate (or describe) the distribution of data points.]
+
+--
+
+.large[A **statistical hypothesis** is a predicted pattern in the data that should occur if the research hypothesis is true.]
 
 ---
 background-image: url("img/blue-bird.png")
