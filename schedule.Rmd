@@ -14,8 +14,8 @@ Course material will be updated here throughout the week.
 
 # Day 1
 
-* Course introduction 
-* Introduction to hypothesis testing
+* [Course introduction](slides/day-01.html)
+* [Introduction to hypothesis testing](slides/day-01.html#hypothesis)
 
 # Day 2
 
