@@ -215,6 +215,12 @@ Learn more: [*How ChatGPT works*](https://towardsdatascience.com/how-chatgpt-wor
 ```
 
 ---
+background-image: url("https://winder.ai/introduction-large-language-models-chatgpt/gpt-training.png")
+background-size: contain
+background-size: 75%
+
+
+---
 class: middle center
 
 # Demo

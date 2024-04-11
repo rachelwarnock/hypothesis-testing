@@ -25,7 +25,7 @@ Course material will be updated here throughout the week.
 * [Github (optional tutorial)](https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/)
 * [Distributions and functions in R](https://docs.google.com/presentation/d/1Szc2vO5Jk1D6sYeq90z2mpF8I1Iu0BThYe6GeGQPnXE/edit?usp=sharing)
 * Statistical tests II (non-parametric tests)
-* [Using chatGTP](slides/day-03.html)
+* [chatGTP stats assistant](slides/day-03.html)
 
 # Day 3
 
