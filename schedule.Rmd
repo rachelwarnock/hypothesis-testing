@@ -14,7 +14,7 @@ Course material will be updated here throughout the week.
 
 # Day 1
 
-* [Course introduction](slides/day-01.html)
+* [Course introduction](slides/day-01.html) ([PDF](https://drive.google.com/file/d/1X3q9v4Ot0ZR3NUiFp8ntZ-HMYCHrpABa/view?usp=share_link))
 * [Introduction to hypothesis testing](slides/day-01.html#hypothesis)
 * [Significance and p-values](slides/day-01.html#significance)
 * [Statistical tests I (parametric tests)](slides/test-statistics.pdf)
@@ -23,7 +23,9 @@ Course material will be updated here throughout the week.
 
 * [Intro to reproducibility](slides/reproducibility.pdf)
 * [Github (optional tutorial)](https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/)
+* [Distributions and functions in R](https://docs.google.com/presentation/d/1Szc2vO5Jk1D6sYeq90z2mpF8I1Iu0BThYe6GeGQPnXE/edit?usp=sharing)
 * Statistical tests II (non-parametric tests)
+* [Using chatGTP](slides/day-03.html)
 
 # Day 3
 

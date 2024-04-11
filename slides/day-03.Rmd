@@ -2,7 +2,7 @@
 title: "Artificial Intelligence"
 author:
   - "Rachel Warnock"
-date: "05.04.2023"
+date: "11.04.2024"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -54,16 +54,9 @@ background-color: white
 # .red[`r rmarkdown::metadata$title`]
 
 ### .red[`r rmarkdown::metadata$author`]
-### .red[plus a few robot friends]
 
 ### .red[`r rmarkdown::metadata$date`]
 ]
-
----
-
-# Today
-
-<br>
 
 ```{css, echo=F}
     /* Table width = 100% max-width */
@@ -86,33 +79,6 @@ background-color: white
    .huge { font-size: 160% }
 ```
 
-
-.pull-left[
-```{r schedule, echo = FALSE}
-library(kableExtra)
-dt <- data.frame(schedule = c("Intro to artificial intelligence tools",
-                              "Group exercise: using AI to support you", #30-45 mins
-                              "Lunch (45 mins)", # 45 mins  13:00
-                              "Statistical tests II", #30 minutes
-                              "Break (15 mins)",
-                              "Work on presentations"),
-                 start.time = c("11:00", 
-                          "", 
-                          "", 
-                          "12.30",
-                          "13:30",
-                          "")) #45 minutes
-kbl(dt, align=c("l","c")) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
-
-# Slides
-```
-.footnote[Times are approximate.]
-]
-
-.pull-right[
-<center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
-]
 
 ---
 background-image: url("img/bender.jpg")
@@ -208,10 +174,6 @@ class: middle
 ]
 
 ---
-background-image: url("https://togetherdigital.imgix.net/96206/1198x1198/15483ac2d5/ucdpa-chatgpt-img-1.png?q=60&w=900&lossless=1&auto=format&ixlib=js-1.1.1&s=7fd959848edb31cfa8b91c0030d154b7")
-background-size: contain
-
----
 background-image: url("https://miro.medium.com/v2/resize:fit:1142/format:webp/1*bRAm5gHJKsW1Jq7JOoIV4Q.png")
 background-size: contain
 background-size: 40%
@@ -229,12 +191,9 @@ The model is filling in the blank with the most statistically probable word give
 ]
 ]
 
---
-
 
 .footnote[
 Quick video: [*What can you do with GPT-4?*](https://www.youtube.com/watch?v=oc6RV5c1yd0)]
-]
 
 .pull-right[
 .pull-right[
@@ -254,10 +213,6 @@ Learn more: [*How ChatGPT works*](https://towardsdatascience.com/how-chatgpt-wor
 # https://www.youtube.com/watch?v=--khbXchTeE
 }
 ```
-
----
-background-image: url("https://openaicom.imgix.net/cf717bdb-0c8c-428a-b82b-3c3add87a600/ChatGPT_Diagram.svg?fm=auto&auto=compress,format&fit=min&w=1919&h=1138")
-background-size: contain
 
 ---
 class: middle center
