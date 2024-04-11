@@ -21,7 +21,7 @@ Course material will be updated here throughout the week.
 
 # Day 2
 
-* [Intro to reproducibility](slides/test-statistics.pdf)
+* [Intro to reproducibility](slides/reproducibility.pdf)
 * [Github (optional tutorial)](https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/)
 * Statistical tests II (non-parametric tests)
 

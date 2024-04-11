@@ -86,20 +86,22 @@ background-color: white
 #schedule
 library(kableExtra)
 dt <- data.frame(schedule = c( # variables quiz
-                              "Course introduction", #20 mins
-                              "Group exercise: mini reading group", #20 mins
+                              "Course introduction", 
+                              "Group exercise: mini reading group", 
                               "Break",
-                              "Introduction to hypothesis testing", #45 min lecture 12:00
-                              "Group exercise: defining hypotheses", #30 minutes
-                              "Lunch (1 hr)", # 45 mins  13:00
-                              "P-values"),
+                              "Introduction to hypothesis testing", 
+                              "Group exercise: defining hypotheses",
+                              "Lunch (1 hr)",
+                              "p-values",
+                              "Parametric tests"),
                  start.time = c("10:00", 
                           "", 
                           "", 
                           "11:15", 
                           "12.30",
                           "13:30",
-                          "14:00")) #45 minutes
+                          "14:00",
+                          "15:00")) #45 minutes
 kbl(dt, align=c("l","c")) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
@@ -1088,13 +1090,13 @@ The goal behind statistical hypothesis testing is not to *eliminate* but to *min
 .large[
 After we run the test, one of four things might have happened:
 
-* $H_0$ is true and we correctly accept the null
+* $H_0$ is **true** and we *correctly accept* the null
 
-* $H_0$ is true and we **incorrectly** accept the null (type I error)
+* $H_0$ is **true** and we *incorrectly reject* the null (type I error)
 
-* $H_0$ is false and we correct reject the null
+* $H_0$ is **false** and we *correctly reject* the null
 
-* $H_0$ is false and **incorrectly** reject the null (type II error)
+* $H_0$ is **false** and we *incorrectly accept* the null (type II error)
 ]
 
 ---
