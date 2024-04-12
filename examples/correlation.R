@@ -1,6 +1,6 @@
 # https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/
 # The Bonferroni correction compensates for that increase by testing each individual hypothesis at a significance level of alpha/m
-# where alpha is the desired overall alpha level andm is the number of hypotheses
+# where alpha is the desired overall alpha level and m is the number of hypotheses
 
 # read the data
 dat <- read.csv("member_data.csv", header = TRUE)

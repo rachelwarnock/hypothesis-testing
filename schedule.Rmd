@@ -37,7 +37,7 @@ Course material will be updated here throughout the week.
   * [Wilcoxon test](examples/wilcoxon.R)
   * [Kruskal-Wallis test](examples/kruskal-wallis.R)
   * [Tukey HSD test](examples/tukey.R)
-  * [Steel.Dwass test](examples/steel-dwass.R)
+  * [Steel-Dwass test](examples/steel-dwass.R)
   * [Correlation](examples/correlation.R)
 
 * [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
