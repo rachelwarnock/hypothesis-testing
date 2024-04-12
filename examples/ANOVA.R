@@ -38,3 +38,10 @@ p
 res_aov <- aov(length~genus, data = df)
 summary(res_aov)
 
+###########
+
+# you could also subset data by time
+time1 <- dat[which(dat$Time == "Campanian.PDT"),]
+time2 <- dat[which(dat$Time == "Miocene.PDT"),]
+time3 <- dat[which(dat$Time == "Pliocene.PDT"),]
+

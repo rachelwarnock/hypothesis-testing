@@ -33,6 +33,7 @@ Course material will be updated here throughout the week.
   * [data](examples/zooid_size.csv) 
   * [*t*-test](examples/t-test.R)
   * [ANOVA](examples/ANOVA.R)
+  * [Shapiro-Wilk's](examples/shapiro.R)
 
 * [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
 
