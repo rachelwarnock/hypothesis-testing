@@ -2,7 +2,7 @@
 title: "Hypothesis testing course summary"
 author: 
   - "Rachel Warnock"
-date: "06.04.2023"
+date: "12.04.2024"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -111,6 +111,35 @@ background-image: url("barriers.png")
 .footnote[[Errington et al. 2021](https://elifesciences.org/articles/67995)]
 ]
 ]
+---
+class: middle
+
+# What about paleobiology?
+
+---
+class: middle
+background-size: 80%
+background-position: centre
+background-image: url("img/proj_friday.png")
+
+---
+
+<br>
+<br>
+
+.large[
+*"When [...] datasets were not available [...], we sent a personalized template email [...] to the lead or corresponding author(s) of PBDB publications asking for the dataset. If no response was received after 2 weeks, we contacted authors again with a follow-up email."* 
+]
+--
+
+.large[
+*"Within a few days (median = 1 day, mean = 5.5 days), 50% of the 167 responses provided either a file or a link to the requested data, 17% of responses indicated that the files had been lost, 9% of responses indicated only simple use of the PBDB that required no download, and 23% of responses indicated the publication did not use PBDB data."*
+]
+--
+
+.large[
+*"We did not receive a response from authors for 25% of the PBDB publications (68/ 268 requests). In total, we were able to extract the needed information from 151 PBDB publications, accounting for* **38% of PBDB publications** *(total = 396) within the temporal scope our data collection phase"*
+]
 
 ---
 class: middle
@@ -138,7 +167,7 @@ class: middle
 
 # Research design
 
-.large[A **hypothesis testing framework** can help guide your project design *objectively*, including choice of data, sampling approach and statistical tests.]
+.large[A **hypothesis testing framework** can help guide your project design *objectively*, including choice of data, sampling approach, and statistical tests.]
 
 --
 
@@ -173,21 +202,23 @@ background-image: url("img/team_effort.jpg")
 
 
 ---
-class: middle inverse
+class: middle centre inverse
 
 .center[
 .pull-left[
 
-## Thank you!
+<br>
+<br>
 
-### Fill out the [.red[course feedback form]](https://forms.gle/9EePRYnJSHipNc1V8)
+# Thank you!
+
 ]
 ]
 
 
 
 .pull-right[
-<center><img src="https://mochimochiland.com/wp-content/uploads/cheerupDRAFT1sm.gif" alt="" height="300px" /></center>
+<center><img src="https://media.giphy.com/media/Uv1ocOCpjNRDc3vZse/giphy.gif" alt="" height="300px" /></center>
 ]
 
 
@@ -224,6 +255,7 @@ Lies the secrets that evolution yields.
 #background-image: url("https://media.giphy.com/media/hTUyx24ANT0h16iTE0/giphy.gif")
 
 #.pull-left[# That's a wrap!]
+### Fill out the [.red[course feedback form]](https://forms.gle/9EePRYnJSHipNc1V8)
 ```
 
 

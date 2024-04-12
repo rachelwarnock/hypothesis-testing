@@ -41,6 +41,7 @@ Course material will be updated here throughout the week.
   * [Correlation](examples/correlation.R)
 
 * [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
+* [Summary](slides/summary.html)
 
 # Day 4
 
