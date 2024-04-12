@@ -30,7 +30,11 @@ Course material will be updated here throughout the week.
 # Day 3
 
 * R practicals (parametric and non-parametric tests)
+  * [data](examples/zooid_size.csv) 
+  * [*t*-test](examples/t-test.R)
+  * [ANOVA](examples/ANOVA.R)
 
+* [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
 
 # Day 4
 

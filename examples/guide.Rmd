@@ -1,0 +1,26 @@
+---
+title: ""
+output: html_document
+---
+
+# How to choose a stastical test
+
+There's actually not that many!
+
+## Parametric tests
+
+Different tests available  : comparison, correlation, regression (cause and effect relationships). 
+This guide will only mention 1 and 2.
+
+
+```{r, echo = FALSE}
+#schedule
+library(kableExtra)
+dt <- data.frame(Research_question  = c("what?"),
+                 variable = "1",
+                 )
+
+kbl(dt, align=c("l","c")) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+
+```
