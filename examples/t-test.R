@@ -2,7 +2,9 @@
 # See also: http://www.sthda.com/english/wiki/normality-test-in-r
 
 #install.packages("ggplot2")
+#install.packages("Hmisc")
 library(ggplot2)
+library(Hmisc) # required to plot the SD
 
 # read the data
 dat <- read.csv("zooid_size.csv", header = TRUE)
@@ -24,9 +26,9 @@ mean(df[which(df$genus == name2),]$length)
 
 ########### visualise the data
 
-p<-ggplot(df, aes(x = genus, y = length, fill = genus)) +  
+p<-ggplot(df, aes(x = genus, y = length)) +  
   stat_summary(geom = "point", fun = mean) +
-  stat_summary(geom = "errorbar", fun.data = mean_se)
+  stat_summary(geom = "errorbar", fun.data = mean_se) # mean_sdl: requires the Hmisc 
 
 p
 
