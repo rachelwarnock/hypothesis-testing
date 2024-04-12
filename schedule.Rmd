@@ -29,8 +29,10 @@ Course material will be updated here throughout the week.
 
 # Day 3
 
-* R practicals (parametric and non-parametric tests)
-  * [data](examples/zooid_size.csv) 
+* [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
+* R examples (parametric and non-parametric tests)
+  * [Bryozoan data](examples/zooid_size.csv) 
+  * [Sampling proxy data](examples/member_data.csv) 
   * [*t*-test](examples/t-test.R)
   * [ANOVA](examples/ANOVA.R)
   * [Shapiro-Wilk's test](examples/shapiro.R)
@@ -40,7 +42,6 @@ Course material will be updated here throughout the week.
   * [Steel-Dwass test](examples/steel-dwass.R)
   * [Correlation](examples/correlation.R)
 
-* [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
 * [Summary](slides/summary.html)
 
 # Day 4

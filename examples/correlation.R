@@ -15,7 +15,7 @@ for(i in nms){
 
 which(p.values < 0.05)
 
-pa <- p.adjust(p.values,method="bonferroni")
+pa <- p.adjust(p.values, method="bonferroni")
 
 which(pa < 0.05)
 

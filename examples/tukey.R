@@ -41,3 +41,5 @@ summary(res_aov)
 ########### Tukey HSD (honestly significant difference)
 
 TukeyHSD(res_aov, conf.level=.95)
+
+
