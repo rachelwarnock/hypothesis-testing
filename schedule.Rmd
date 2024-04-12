@@ -33,9 +33,10 @@ Course material will be updated here throughout the week.
   * [data](examples/zooid_size.csv) 
   * [*t*-test](examples/t-test.R)
   * [ANOVA](examples/ANOVA.R)
-  * [Shapiro-Wilk's](examples/shapiro.R)
+  * [Shapiro-Wilk's test](examples/shapiro.R)
   * [Wilcoxon test](examples/wilcoxon.R)
   * [Kruskal-Wallis test](examples/kruskal-wallis.R)
+  * [Tukey HSD](examples/tukey.R)
 
 * [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
 

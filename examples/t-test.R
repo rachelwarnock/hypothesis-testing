@@ -13,8 +13,8 @@ unique(dat$genus) # shows unique genus
 table(dat$genus) # shows the frequency
 
 # subset data by species
-name1 <- "Porella"
-name2 <- "Monoporella"
+name1 <- "Microporella(cf.)"
+name2 <- "Schizoporella"
 
 g1.df <- dat[which(dat$genus == name1),]
 g2.df <- dat[which(dat$genus == name2),]
