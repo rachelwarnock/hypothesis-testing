@@ -1,0 +1,54 @@
+---
+title: "Materials"
+output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+---
+
+\
+
+Course material will be updated here.
+
+# Part 1
+
+* [Course introduction](slides/day-01.html) ([PDF](https://drive.google.com/file/d/1X3q9v4Ot0ZR3NUiFp8ntZ-HMYCHrpABa/view?usp=share_link))
+
+Jump to:
+
+  * [Introduction to hypothesis testing](slides/day-01.html#hypothesis)
+  * [Significance and p-values](slides/day-01.html#significance)
+
+# Part 2
+
+* [Intro to reproducibility](slides/day-02.html) ([PDF](https://drive.google.com/file/d/123MCYQHRwnR3_prbjplxHC1bYIsJ0Vpr/view?usp=share_link))
+
+# More about statistical tests
+
+## Slides
+
+* [Statistical tests I (parametric tests)](https://drive.google.com/file/d/17-jhttviYJHSau9b29dRMDelRjqegTU4/view?usp=share_link)
+* [Statistical tests II (non-parametric tests)](https://drive.google.com/file/d/1hAFAzGOl1oEYRN4DCTkE6IeWZqeOIONf/view?usp=share_link)
+
+## Statistical tests using R
+
+* [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
+* R examples (parametric and non-parametric tests)
+  * [Bryozoan data](examples/zooid_size.csv) 
+  * [Sampling proxy data](examples/member_data.csv) 
+  * [*t*-test](examples/t-test.R)
+  * [ANOVA](examples/ANOVA.R)
+  * [Shapiro-Wilk's test](examples/shapiro.R)
+  * [Wilcoxon test](examples/wilcoxon.R)
+  * [Kruskal-Wallis test](examples/kruskal-wallis.R)
+  * [Tukey HSD test](examples/tukey.R)
+  * [Steel-Dwass test](examples/steel-dwass.R)
+  * [Correlation](examples/correlation.R)
+
+# Other resources
+
+* [Distributions and functions in R](https://docs.google.com/presentation/d/1Szc2vO5Jk1D6sYeq90z2mpF8I1Iu0BThYe6GeGQPnXE/)
+* [Variance and the normal distribution](https://docs.google.com/presentation/d/1ltBkbOhbjxHT-a0-5w024D9wz-dmvpX2NZUccPBGM-M/)
+* [Github tutorial](https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/)
+

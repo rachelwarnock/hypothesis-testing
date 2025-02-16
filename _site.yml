@@ -13,5 +13,5 @@ navbar:
       href: index.html
     - text: "Groups"
       href: groups.html
-    - text: "Schedule"
-      href: schedule.html
+    - text: "Materials"
+      href: materials.html

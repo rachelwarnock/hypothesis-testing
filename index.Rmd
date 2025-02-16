@@ -11,10 +11,9 @@ knitr::include_graphics("hands.png")
 # Course description
 
 This course focuses on statistical **hypothesis testing** and **reproducibility** in science. 
-You will learn how develop and test your own hypotheses, perform basic statistical tests and apply this knowledge to reproduce (and potentially improve) published results. There will be a combination of lectures and group exercises. 
+You will learn how develop and test hypotheses, perform basic statistical tests and apply this knowledge to reproduce (and potentially improve) published results. There will be a combination of lectures and group exercises. 
 
-The main part of this course will take place **10-12 April 10:00-17:00** in person at Henke Str.
-We will finish at 17:00 at the *latest* each day and there will be plenty of breaks.
+The main part of the course will take place in two parts on **16 Feb 11:30-17:00** and **22 April 10:00-17:00** in person at Henke Str. Group presentations will take place on **09 May 14:00-16:00**.
 
 Each student is assigned to a working [group](groups.html) and each group is assigned a published scientific paper.
 
@@ -23,7 +22,7 @@ Each student is assigned to a working [group](groups.html) and each group is ass
 # Before the course
 
 1. **Read the paper assigned to your working group**
-2. Complete the [Teacup Giraffe](https://tinystats.github.io/teacups-giraffes-and-statistics/) exercises, 1 through 6 
+2. Make sure you have a good understanding of the normal distribution (see the [Teacup Giraffes](https://tinystats.github.io/teacups-giraffes-and-statistics/) to recap some important terms)
 3. Read up on different types of [statistical variables](https://www.scribbr.com/methodology/types-of-variables/). Pay special attention to the following terms:
     * quantitative & categorical variables
     * discrete & continuous variables
@@ -36,7 +35,7 @@ Each student is assigned to a working [group](groups.html) and each group is ass
 
 The goal is to reproduce the results of a published scientific article.
 Each group will present their findings on a date to be decided together.
-You can use this [Google Slides Template](https://docs.google.com/presentation/d/1R_p1v3kD2eWrfU0uOmbvyE4iP0YD2_KRqfAuxwOLSMg/edit?usp=sharing) and these [guidelines](https://docs.google.com/spreadsheets/d/1tfh-HZc3YM1HHnoTtw9s0O3vqZ89nuhaYFtsMmeCCQw/edit?usp=sharing) to prepare your presentation.
+You can use this [Google Slides Template](https://docs.google.com/presentation/d/1Z3RekIrHsS4-oqRluidL1kNbYLjBMT8CeUDf4szyPQo/edit?usp=sharing) and these [guidelines](https://docs.google.com/spreadsheets/d/1IJbtdQ-KDsJPKNBlwaGw7zQPG9BbBA9FGfKTNFFHbVk/) to prepare your presentation.
 
 Note this course is graded together with Laboratory Methods in Palaeontology.
 
