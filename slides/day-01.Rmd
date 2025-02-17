@@ -2,7 +2,7 @@
 title: "Hypothesis testing"
 author: 
   - "Rachel Warnock"
-date: "09.04.2024"
+date: "19.02.2025"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -141,12 +141,8 @@ You will learn:
 
 .left-column[
 
-
-<br>
-<br>
-
 .red[
-## Group 1
+### Group 1
 ]
 
 <br>
@@ -154,38 +150,48 @@ You will learn:
 
 
 .red[
-## Group 2
+### Group 2
 ]
 
 <br>
 
 .red[
-## Group 3
+### Group 3
+]
+
+<br>
+
+.red[
+### Group 4
 ]
 
 ]
 
 .right-column[
 
-<br>
-<br>
-
 .large[
-[*Statistical analysis of iron geochemical data suggests limited late Proterozoic oxygenation*](https://www.nature.com/articles/nature14589)
+[*Diversity and faunal changes in the latest Cretaceous dinosaur communities of southwestern Europe*](https://www.sciencedirect.com/science/article/abs/pii/S0195667115300264?casa_token=0WvECdAuP4QAAAAA:Pc1O77s9JVCTG6m7IGpV2Q5JTD7PADtqCI_LzB0SF_wpXKH9rpZdS7WUBcvbyeUJl2Ia40hSbA)
 ]
 
 <br>
 <br>
 
 .large[
-[*High coral diversity is coupled with reef-building capacity during the Late Oligocene warming*](https://riviste.unimi.it/index.php/RIPS/article/view/16332)
+[*Macroevolutionary trends in theropod dinosaur feeding mechanics*](https://doi.org/10.1016/j.cub.2021.11.060)
 ]
 
 <br>
 <br>
 
 .large[
-[*Isotopic and anatomical evidence of an herbivorous diet in the Early Tertiary giant bird Gastornis*](https://pubmed.ncbi.nlm.nih.gov/24563098/)
+[*The locomotor ecomorphology of Mesozoic marine reptiles*](https://onlinelibrary.wiley.com/doi/10.1111/pala.12645)
+]
+
+<br>
+<br>
+
+.large[
+[*Walking like dinosaurs: chickens with artificial tails provide clues about non-avian theropod locomotion*](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088458)
 ]
 
 ]
@@ -204,7 +210,7 @@ You will learn:
 
 --
 
-.large[On **a date to be decided** each group will present their findings.]
+.large[On **09 May 14:00-16:00** each group will present their findings.]
 
 --
 
@@ -212,7 +218,7 @@ You will learn:
 
 --
 
-.large[Within your working groups, try to do everything within time allocated for the course.]
+.large[Within your group, try to get as much done as possible in the time allocated for the course.]
 
 ---
 <br>
@@ -277,7 +283,7 @@ knitr::include_graphics("img/fossil.png")
 ]
 
 .pull-right[
-# Why does palaeobiology feature so much statistics?
+# Why does paleobiology include so much statistics?
 .large[What do you think? &#129300;]
 ]
 
@@ -295,6 +301,40 @@ knitr::include_graphics("img/fossil.png")
     }
 ```
 ---
+class: middle
+# Discussion
+
+.pull-left[
+
+.large[**Group exercise**]
+
+In your working groups, introduce yourselves and consider the following:
+
+* Why do we need statistics?
+* What is your experience using statistics so far?
+* Can you think of a scenario where statistics might be useful or important?
+* Discuss the examples on the next slides.
+
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 15, 
+  seconds = 0, 
+  warn_when = 12,
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+
+
+---
+
 class:my-one-page-font
 
 ```{r, out.width = '15%', fig.align = 'right', echo = FALSE}
@@ -356,7 +396,7 @@ class: middle
 # Mini reading group
 
 .pull-left[
-.large[**First group exercise**]
+.large[**Group exercise**]
 
 In your working groups:
 
@@ -388,7 +428,7 @@ class: middle center
 
 <center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
 
-# .black[Time for a break]
+# .black[Take a break if you need one]
 
 
 
@@ -873,15 +913,16 @@ background-position: right
 
 ---
 class: middle
-# Hypotheses
+# # Mini reading group
 
 .pull-left[
-.large[**Second group exercise**]
+.large[**Group exercise**]
 
 Discuss the hypotheses in your paper.
 
 Try to identify the following:
 * The research hypothesis
+* Statistical tests
 * The alternative hypothesis
 * The null hypothesis
 
