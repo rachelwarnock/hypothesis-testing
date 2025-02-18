@@ -86,34 +86,33 @@ background-color: white
 #schedule
 library(kableExtra)
 dt <- data.frame(schedule = c( # variables quiz
-                              "Course introduction", 
-                              "Group exercise: mini reading group", 
-                              "Break",
-                              "Introduction to hypothesis testing", 
-                              "Group exercise: defining hypotheses",
-                              "Lunch (1 hr)",
-                              "p-values",
-                              "Parametric tests"),
-                 start.time = c("10:00", 
+                              "Course intro", 
+                              "Group activities", 
+                              "Hypothesis testing", 
+                              "Lunch (45 min)?",
+                              "Significance and *p*-values",
+                              "Reproducibility",
+                              "Group activities",
+                              "Round up"),
+                 time = c("11:30", 
                           "", 
-                          "", 
-                          "11:15", 
-                          "12.30",
-                          "13:30",
+                          "",
+                          "",
                           "14:00",
-                          "15:00")) #45 minutes
+                          "", "", "16:30"))
 kbl(dt, align=c("l","c")) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+  kable_styling(bootstrap_options = "striped", full_width = T, position = "left")
 
 # Slides
 ```
-.footnote[*times are approximate]
+.footnote[*Timing is flexible and up to you. Take breaks when you want]
 ]
 
 --
 
 .pull-right[
 <center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
+
 ]
 
 ---
@@ -130,7 +129,7 @@ class: middle
 The course focuses on **statistical hypothesis testing** and **reproducibility** in science. 
 
 You will learn:
-* how develop and test your own hypotheses
+* how develop and test hypotheses
 * perform basic statistical tests 
 * apply this knowledge to reproduce (and potentially improve) published results
 ]
@@ -206,7 +205,7 @@ You will learn:
 
 # Course evaluation
 
-.large[The goal is to reproduce the results of a published scientific article.]
+.large[The goal is to reproduce the statistical results of a published scientific article.]
 
 --
 
@@ -234,11 +233,11 @@ You will learn:
 
 --
 
-.large[The focus of the course is on the **concepts** behind statistical hypothesis testing and reproducibility, not programming, but both things are (probably) easier if you use R.]
+.large[The focus is on the **concepts** behind statistical hypothesis testing and reproducibility, not programming, but both things are (probably) easier if you use R.]
 
 --
 
-.large[It's up to each group how you divide the tasks.]
+.large[It's up to each group how to divide the tasks.]
 
 ---
 
@@ -308,7 +307,7 @@ class: middle
 
 .large[**Group exercise**]
 
-In your working groups, introduce yourselves and consider the following:
+In your working group, introduce yourselves, and consider the following:
 
 * Why do we need statistics?
 * What is your experience using statistics so far?
@@ -403,9 +402,10 @@ In your working groups:
 Introduce yourselves and discuss your paper.
 * What is the paper about?
 * What was the general aim?
-* Did you like / not like it?
+* What were the study's findings?
+* What did you like / not like?
 
-To report back: prepare a three sentence summary.
+For later: prepare a three sentence summary.
 
 ]
 
@@ -463,6 +463,10 @@ background-position: right
 
 * Null vs. alternative hypotheses
 
+* Test statistics
+
+* Sampling distributions
+
 * Significance and *p*-values
 ]
 
@@ -470,6 +474,102 @@ background-position: right
 
 ]
 
+---
+class: middle
+# Discussion 
+
+.pull-left[
+.large[**Group exercise**]
+
+Discuss the following:
+
+* Data types
+  * categorical vs. numerical
+  * nominal vs. ordinal
+  * discrete vs. continuous
+
+* Can you think of an example of each one?
+* What types of data are used in your paper? Make a note.
+
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+---
+class: middle
+# Data types
+---
+class: middle
+# Discussion 
+
+.pull-left[
+.large[**Group exercise**]
+
+Discuss the following concepts:
+
+* Research hypothesis vs. statistical hypothesis
+* Null hypothesis vs. alternative hypothesis
+* Test statistics
+* Summary distributions
+
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
+---
+class: middle
+# Discussion 
+
+.pull-left[
+.large[**Group exercise**]
+
+Other important terms:
+
+* Type I errors
+* Type II errors
+
+* Why is the goal of hypothesis testing to minimise type I, not type II, errors?
+
+]
+
+.pull-right[
+```{r, echo=FALSE}
+countdown::countdown(
+  minutes = 10, 
+  seconds = 0, 
+  warn_when = 8, 
+  style = "position: relative; width: min-content; margin: 1em auto;",
+  #color_running_background = "#31b09e",
+  color_warning_background = "#f79334",
+  #color_finished_background = "#b56b6f",
+  #color_finished_text = "#eaeaea"
+)
+```
+]
 ---
 background-image: url("img/moons.png")
 background-size: contain
@@ -927,9 +1027,9 @@ Try to identify the following:
 * The null hypothesis
 
 Make a note to add your presentation.
-Don't worry about getting it perfect, you can go back and refine it later.
+Don't worry about getting it perfect, you can go back and refine the wording later.
 
-Do you agree with the authors? Are there more than one?
+Do you agree with the authors?
 
 ]
 

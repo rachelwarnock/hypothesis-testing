@@ -22,7 +22,11 @@ Each student is assigned to a working [group](groups.html) and each group is ass
 # Before the course
 
 1. **Read the paper assigned to your working group**
-2. Watch this short-ish video [Statistics in half an hour](https://www.youtube.com/watch?v=kyjlxsLW1Is) from [@zedstatistics](http://www.zstatistics.com/videos) by Justin Zeltzer.
+2. Watch the following short videos from [@zedstatistics](http://www.zstatistics.com/videos) by Justin Zeltzer.
+  * [Hypothesis testing #1](https://www.youtube.com/watch?v=zR2QLacylqQ&t)
+  * [Hypothesis testing #2](https://www.youtube.com/watch?v=2GU_R7G5m-8&t)
+  * [Hypothesis testing #3](https://www.youtube.com/watch?v=Z8E3hi8INZk)
+  * [Hypothesis testing #4](https://www.youtube.com/watch?v=bh_5Yr3YjO0)
 
 \
 
