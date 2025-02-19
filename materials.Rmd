@@ -13,6 +13,13 @@ Course material will be updated here.
 
 \
 
+## Class material
+
+* [Part 1: Intro to hypothesis testing](slides/part-01.html)
+* [Part 2: Reproducibility](slides/part-02.html)
+
+\
+
 ## Statistical tests using R
 
 * [Which test should you use?](https://www.scribbr.com/statistics/statistical-tests/)
@@ -28,8 +35,12 @@ Course material will be updated here.
   * [Steel-Dwass test](examples/steel-dwass.R)
   * [Correlation](examples/correlation.R)
 
+\
+
 ## Other resources
 
+* [Statistical tests I (parametric tests)](https://drive.google.com/file/d/17-jhttviYJHSau9b29dRMDelRjqegTU4/view?usp=share_link)
+* * [Statistical tests II (non-parametric tests)](https://drive.google.com/file/d/1hAFAzGOl1oEYRN4DCTkE6IeWZqeOIONf/view?usp=share_link)
 * [Distributions and functions in R](https://docs.google.com/presentation/d/1Szc2vO5Jk1D6sYeq90z2mpF8I1Iu0BThYe6GeGQPnXE/)
 * [Variance and the normal distribution](https://docs.google.com/presentation/d/1ltBkbOhbjxHT-a0-5w024D9wz-dmvpX2NZUccPBGM-M/)
 * [Github tutorial](https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/)

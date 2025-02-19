@@ -2,7 +2,7 @@
 title: "Reproducibility & data accessibility in science"
 author:
   - "Rachel Warnock"
-date: "11.04.2024"
+date: "19.02.2025"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -219,22 +219,10 @@ Blog by American Naturalist editor Dan Bolnick
 [*17 months*](http://ecoevoevoeco.blogspot.com/2021/05/17-months.html)
 ]
 
----
-class: middle
-background-image: url("img/reproducibility_6.png")
-background-size: contain
+.large[Note this story is more replicability and scientific integrity than reproducibility, but the two are linked. Reproducibility supports replicability.]
 
 ---
-class: middle
 
-.huge[Note this story is more replicability and scientific integrity than reproducibility, but the two are linked. Reproducibility supports replicability.]
-
----
-class: middle
-background-image: url("img/reproducibility_7.png")
-background-size: contain
-
----
 <br>
 <br>
 <br>
@@ -302,7 +290,7 @@ class: middle
 .pull-left[
 .large[**Group exercise**
 
-In your working groups, establish the following and report back:
+In your working groups, establish the following and take note:
 
 * Can you access the raw data associated with your study?
 * Can you access the code used to perform the statistical analysis?
@@ -340,10 +328,9 @@ class: middle
 ---
 class: middle 
 
-# Reproducibility
+# Something to think about
 
 .huge[
-Something to think about:
 
 Is enough information provided for you to reproduce the analysis? &#129300;
 ]
@@ -490,7 +477,7 @@ class: middle center
 
 <center><img src="https://media.giphy.com/media/icVkqVBTfuBDczxyBH/giphy.gif" alt="" height="300px" /></center>
 
-# .black[Time for a break]
+# .black[Take a break if you need one]
 
 
 ---
@@ -525,5 +512,5 @@ countdown::countdown(
 
 
 ```{r, eval=FALSE, echo=FALSE}
-renderthis::to_pdf("day-02.Rmd", complex_slides = TRUE)
+renderthis::to_pdf("part-02.Rmd", complex_slides = TRUE)
 ```
