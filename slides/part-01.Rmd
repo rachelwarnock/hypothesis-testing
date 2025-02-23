@@ -1116,7 +1116,7 @@ countdown::countdown(
 
 .large[* YouTube, I'm a big fan of [@zedstatistics](http://www.zstatistics.com/videos) but there are many others]
 
-.large[* chatGTP provides great explanations of basic tests]
+.large[* AI tools can provide great explanations of basic tests]
 
 .large[* Consider taking a [Coursera Course](https://www.coursera.org/learn/basic-statistics)]
 
@@ -1193,6 +1193,6 @@ class: middle center
 
 # .black[End of Part 1]
 
-```{r, eval=TRUE, echo=FALSE}
+```{r, eval=FALSE, echo=FALSE}
 renderthis::to_pdf("part-01.Rmd",complex_slides = TRUE)
 ```

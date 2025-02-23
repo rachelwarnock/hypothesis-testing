@@ -509,6 +509,28 @@ countdown::countdown(
 )
 ```
 ]
+---
+class: middle
+
+# Check-in 
+
+.large[Could each group report the following:
+
+* Provide a brief overview of your paper
+
+* Are the research questions and hypotheses clear? Did you find any issues?
+
+* Is the data and code accessible?
+
+* What are your next steps?
+
+]
+---
+class: middle
+
+.huge[It's pretty normal to find that hypotheses are not stated explicitly or don't make sense.]
+
+.huge[It's also pretty normal to find that data and code are unavailable, even when the paper says it is available.]
 
 
 ```{r, eval=FALSE, echo=FALSE}
