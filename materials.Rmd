@@ -17,6 +17,7 @@ Course material will be updated here.
 
 * [Part 1: Intro to hypothesis testing](slides/part-01.html)
 * [Part 2: Reproducibility](slides/part-02.html)
+* [Part 3: Statistical tests I](slides/part-03.pdf)
 
 \
 
