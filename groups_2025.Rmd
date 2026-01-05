@@ -1,0 +1,61 @@
+---
+title: ""
+output: html_document
+---
+
+\
+
+```{r, echo=FALSE, out.width="40%",  out.extra='style="float:right; padding:20px"'}
+knitr::include_graphics("groups.png")
+```
+
+➤ **[Link to PDFs](https://drive.google.com/drive/folders/1taZAx2K9_AKWIxsykmPqI-53ighXjd5o?usp=share_link)**
+
+\
+
+# Group 1
+
+[Diversity and faunal changes in the latest Cretaceous dinosaur communities of southwestern Europe](https://www.sciencedirect.com/science/article/abs/pii/S0195667115300264?casa_token=0WvECdAuP4QAAAAA:Pc1O77s9JVCTG6m7IGpV2Q5JTD7PADtqCI_LzB0SF_wpXKH9rpZdS7WUBcvbyeUJl2Ia40hSbA)
+
+* Alfie
+* Maria
+* Max
+* Niklas
+* Oskar
+
+\
+
+# Group 2
+
+[Macroevolutionary trends in theropod dinosaur feeding mechanics](https://doi.org/10.1016/j.cub.2021.11.060)
+
+* Eren
+* Katrin
+* Jonas
+* Nora
+* Sarah
+
+\
+
+# Group 3
+
+[The locomotor ecomorphology of Mesozoic marine reptiles](https://onlinelibrary.wiley.com/doi/10.1111/pala.12645)
+
+* Aarya
+* Arion
+* Filip
+* Maibritt
+
+\
+
+# Group 4
+
+[Walking like dinosaurs: chickens with artificial tails provide clues about non-avian theropod locomotion](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088458)
+
+* Angelo
+* Cristian
+* Elena
+* Victoria
+* Vicente
+
+\

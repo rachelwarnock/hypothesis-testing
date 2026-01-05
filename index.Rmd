@@ -11,11 +11,11 @@ knitr::include_graphics("hands.png")
 # Course description
 
 This course focuses on statistical **hypothesis testing** and **reproducibility** in science. 
-You will learn how develop and test hypotheses, perform basic statistical tests and apply this knowledge to reproduce (and potentially improve) published results. There will be a combination of lectures and group exercises. 
+You will learn how develop and test hypotheses, perform basic statistical tests and apply this knowledge to reproduce (and potentially improve) published results. There will be a combination of lectures and group exercises.
 
-The main part of the course will take place in two parts on **16 Feb 11:30-17:00** and **22 April 10:00-17:00** in person at Henke Str. Group presentations will take place on **09 May 14:00-16:00**.
+The main part of the course will take place in two parts on **Fri 13 Feb 10:00-16:00** and **Mon 13 April 10:00-16:00** in person at Henke Str. Group presentations will take place on **Fri 08 May 14:00-16:00**.
 
-Each student is assigned to a working [group](groups.html) and each group is assigned a published scientific paper.
+Each student is assigned to a working [group](groups.html) and each group should have chosen a published scientific paper.
 
 \
 
