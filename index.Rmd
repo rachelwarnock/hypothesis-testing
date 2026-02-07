@@ -22,11 +22,14 @@ Each student is assigned to a working [group](groups.html) and each group should
 # Before the course
 
 1. **Read the paper assigned to your working group**
+
 2. Watch the following short videos from [@zedstatistics](http://www.zstatistics.com/videos) by Justin Zeltzer.
   * [Hypothesis testing #1](https://www.youtube.com/watch?v=zR2QLacylqQ&t)
   * [Hypothesis testing #2](https://www.youtube.com/watch?v=2GU_R7G5m-8&t)
   * [Hypothesis testing #3](https://www.youtube.com/watch?v=Z8E3hi8INZk)
   * [Hypothesis testing #4](https://www.youtube.com/watch?v=bh_5Yr3YjO0)
+
+3. Refamiliarize yourself with the normal distribution via [Tiny Stats](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html)
 
 \
 
