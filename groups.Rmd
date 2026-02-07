@@ -18,16 +18,16 @@ knitr::include_graphics("groups.png")
 * Antonios
 * Hannes
 * Maria
-* Jakob
+* Jakob I
 
 \
 
 # Group 2
 
 * Sebastian
-* Ashley
 * George
 * Nyamkhishig
+* Oskar 
 
 \
 
@@ -37,6 +37,6 @@ knitr::include_graphics("groups.png")
 * Aisha
 * Amber
 * Nicholas
-* Jakob Ortner
+* Jakob II
 
 \
