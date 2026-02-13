@@ -11,7 +11,7 @@ output:
 
 ## Class material
 
-* [Part 1: Intro to hypothesis testing](slides/02_Hypothesis_testing.pdf)
+* [Part 1: Intro to hypothesis testing](slides/01_Hypothesis_testing.pdf)
 * [Part 2: Intro to hypothesis testing](slides/02_Hypothesis_testing.pdf)
 
 \
